@@ -503,6 +503,41 @@
       font-size: 0.75rem; color: var(--color-fg-muted); opacity: 0.4;
       text-align: center;
     }
+
+    /* Footer mobile */
+    @media (max-width: 767px) {
+      .footer-top  { gap: 20px; }
+      .footer-info { line-height: 1.6; }
+      .footer-links { gap: 14px 20px; }
+      .footer-logo  { width: auto; align-self: flex-start; }
+    }
+
+    /* ── Formulário mobile ─────────────────────────────────────
+       Causa raiz do overflow: paddings aninhados somam 70px/lado
+       reg-panel(32) + conj-card(24) + conj-cnt-row(14) = 70px
+       Num celular de 360px sobram ~180px — menos que os controles
+    ─────────────────────────────────────────────────────────── */
+    @media (max-width: 520px) {
+      /* Painel: reduz padding horizontal (maior ganho) */
+      .reg-panel { padding: 20px 12px; }
+
+      /* Card do conjunto */
+      .conj-card { padding: 16px 12px; }
+
+      /* Labels: reduz letter-spacing para textos longos */
+      .reg-label { letter-spacing: 0.04em; }
+
+      /* Linha de categoria */
+      .conj-cnt-row   { padding: 8px 10px; gap: 6px; }
+      .conj-cnt-label { gap: 6px; font-size: 0.82rem; }
+      .conj-cnt-num   { min-width: 34px; font-size: 1.5rem; }
+
+      /* Badge menor dentro da linha */
+      .conj-cnt-label .badge { font-size: 0.58rem; padding: 2px 7px; }
+
+      /* Botões +/- menores */
+      .reg-cbtn { width: 36px; height: 36px; font-size: 1.2rem; }
+    }
   </style>
 </head>
 <body>
@@ -820,6 +855,16 @@
       if (RS.conjuntos.length > 0) renderConjuntos();
     }
 
+    /* ── Sincroniza nomeCao do DOM para o estado (garante oninput não perdido) */
+    function syncNomeCaoFromDOM() {
+      RS.conjuntos.forEach(c => {
+        const card = document.getElementById(`conj-${c.id}`);
+        if (!card) return;
+        const input = card.querySelector('input[type="text"]');
+        if (input) c.nomeCao = input.value;
+      });
+    }
+
     /* ── Validação ───────────────────────────────────────────── */
     function validate(step) {
       const errs = [];
@@ -834,6 +879,7 @@
         if (!document.getElementById('fState').value) errs.push('Selecione o estado.');
       }
       if (step === 3) {
+        syncNomeCaoFromDOM();
         if (RS.conjuntos.length === 0) errs.push('Adicione pelo menos um conjunto.');
         RS.conjuntos.forEach((c, i) => {
           if (!c.nomeCao.trim()) errs.push(`Conjunto ${i+1}: informe o nome do cão.`);
@@ -1071,6 +1117,7 @@
 
     /* ── Finalizar ───────────────────────────────────────────── */
     async function finalizar() {
+      syncNomeCaoFromDOM();
       const errs = [];
       if (!v('fName'))  errs.push('Nome do competidor é obrigatório.');
       if (!document.getElementById('fShirt').value) errs.push('Tamanho da camisa é obrigatório.');

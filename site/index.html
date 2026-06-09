@@ -360,6 +360,29 @@
     .hero-sp-divider { width: 1px; height: 40px; background: var(--color-border); flex-shrink: 0; }
     @media (max-width: 480px) { .hero-sp-divider { display: none; } }
 
+    /* ── Ajustes mobile ───────────────────────────────────────── */
+    @media (max-width: 479px) {
+      /* Botões CTA largura total */
+      .hero-ctas { gap: 10px; }
+      .hero-ctas .btn { width: 100%; }
+
+      /* Prize — menos padding lateral */
+      .hero-prize { padding: 20px; }
+
+      /* Stats — sem letter-spacing para "MODALIDADES" caber na linha */
+      .hero-social-proof { padding: 14px 4px; }
+      .hero-sp-item      { padding: 0 4px; flex: 1; min-width: 0; }
+      .hero-sp-number    { font-size: 1.4rem; }
+      .hero-sp-label     { font-size: 0.54rem; letter-spacing: 0; white-space: nowrap; }
+    }
+
+    /* Footer mobile */
+    @media (max-width: 767px) {
+      .footer-top  { gap: 20px; }
+      .footer-info { line-height: 1.6; }
+      .footer-links { gap: 14px 20px; }
+      .footer-logo  { width: auto; align-self: flex-start; }
+    }
 
     /* ============================================================
        SECTION HEADER (shared)

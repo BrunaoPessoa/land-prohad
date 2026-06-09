@@ -74,9 +74,6 @@ function doPost(e) {
       if (!c.sexo) {
         return jsonResponse(false, null, 'Conjunto ' + (i+1) + ': selecione o sexo.');
       }
-      if (!c.categoria) {
-        return jsonResponse(false, null, 'Conjunto ' + (i+1) + ': selecione a categoria.');
-      }
     }
 
     const aba   = obterOuCriarAba();
