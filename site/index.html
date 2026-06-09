@@ -1,0 +1,1932 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrições Abertas — Etapa 1 · Circuito Pro Had 2026 | Uberlândia, 27–28 Jun</title>
+  <meta name="description" content="Etapa 1 do Circuito Pro Had 2026: 27 e 28 de Junho em Uberlândia–MG. R$ 40.000 em premiação. Competição profissional de pastoreio com cães — modalidades One Foot e Horseback. Inscreva seu conjunto agora.">
+  <meta name="keywords" content="pastoreio com cães, circuito pastoreio, Pro Had 2026, border collie, One Foot, Horseback, bovinos, competição cães, Uberlândia">
+  <meta property="og:title" content="Circuito Pro Had 2026 — Pastoreio com Cães">
+  <meta property="og:description" content="Etapa 1: 27 e 28 de Junho em Uberlândia-MG. R$40.000 em premiação. Inscrições abertas.">
+  <meta property="og:image" content="assets/prohad1.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       TOKENS — PRO HAD 2026
+       Paleta oficial: Identidade Visual Pro Had.pdf
+       #994434 Vermelho | #D2AE6D Dourado | #CB7246 Terra
+    ============================================================ */
+    :root {
+      --color-primary:        #994434;
+      --color-primary-hover:  #7A3228;
+      --color-primary-active: #B05040;
+      --color-accent:         #D2AE6D;
+      --color-accent-hover:   #B89050;
+      --color-secondary:      #CB7246;
+
+      --color-bg-dark:   #0D0807;
+      --color-bg-mid:    #1A1108;
+      --color-bg-subtle: #261A10;
+
+      --color-surface:    #FFFFFF;
+      --color-border:     #3D2E1E;
+      --color-border-accent: rgba(210, 174, 109, 0.2);
+
+      --color-fg:          #FFFFFF;
+      --color-fg-muted:    #A89070;
+      --color-fg-accent:   #D2AE6D;
+      --color-fg-on-primary: #FFFFFF;
+
+      --color-category-amador: #2E7D32;
+      --color-category-pro:    #6A1B9A;
+
+      --font-display: "Bebas Neue", "Oswald", sans-serif;
+      --font-primary:  "Nunito Sans", "DM Sans", sans-serif;
+
+      --radius:    6px;
+      --radius-sm: 4px;
+      --radius-lg: 12px;
+      --max-width: 1280px;
+    }
+
+    /* ============================================================
+       RESET
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--color-bg-dark);
+      color: var(--color-fg);
+      font-family: var(--font-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    ul { list-style: none; }
+
+    /* ============================================================
+       LAYOUT
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    @media (min-width: 768px) { .container { padding: 0 40px; } }
+
+    section { padding: 64px 0; }
+    @media (min-width: 768px) { section { padding: 96px 0; } }
+
+    .section-divider {
+      width: 56px; height: 3px;
+      background: var(--color-primary);
+      margin: 16px 0 24px;
+    }
+    .section-divider--center { margin: 16px auto 24px; }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+      min-height: 48px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-fg-on-primary);
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-hover);
+      border-color: var(--color-primary-hover);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+    .btn-outline:hover { background: rgba(210,174,109,0.08); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--color-fg-muted);
+      border-color: var(--color-border);
+    }
+    .btn-ghost:hover {
+      color: var(--color-fg);
+      border-color: var(--color-fg-muted);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .btn-sm { padding: 10px 20px; font-size: 0.8rem; min-height: 40px; }
+    .btn-full { width: 100%; }
+
+    /* ============================================================
+       BADGES
+    ============================================================ */
+    .badge {
+      display: inline-flex; align-items: center;
+      padding: 4px 12px; border-radius: 100px;
+      font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .badge-amador {
+      background: rgba(46,125,50,0.15);
+      color: #66BB6A;
+      border: 1px solid rgba(46,125,50,0.35);
+    }
+    .badge-pro {
+      background: rgba(106,27,154,0.15);
+      color: #CE93D8;
+      border: 1px solid rgba(106,27,154,0.35);
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(13,8,7,0.96);
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.3s;
+    }
+    .nav {
+      display: flex; align-items: center;
+      justify-content: space-between; height: 64px;
+    }
+    .nav-logo { height: 34px; width: auto; }
+
+    .nav-links {
+      display: none; gap: 32px;
+    }
+    @media (min-width: 1024px) { .nav-links { display: flex; } }
+    .nav-links a {
+      font-size: 0.78rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em;
+      color: var(--color-fg-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--color-accent); }
+
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    .nav-cta-desktop { display: none; }
+    @media (min-width: 768px) { .nav-cta-desktop { display: inline-flex; } }
+
+    .hamburger {
+      display: flex; flex-direction: column; gap: 5px;
+      padding: 8px; cursor: pointer;
+    }
+    @media (min-width: 1024px) { .hamburger { display: none; } }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--color-fg); border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.is-open span:nth-child(2) { opacity: 0; }
+    .hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .nav-drawer {
+      display: none; position: fixed;
+      top: 64px; left: 0; right: 0; bottom: 0;
+      background: var(--color-bg-dark);
+      z-index: 99; flex-direction: column;
+      padding: 32px 24px; gap: 0;
+      overflow-y: auto;
+    }
+    .nav-drawer.is-open { display: flex; }
+    .nav-drawer a {
+      font-family: var(--font-display);
+      font-size: 2.2rem; letter-spacing: 0.03em;
+      color: var(--color-fg);
+      padding: 16px 0;
+      border-bottom: 1px solid var(--color-border);
+      transition: color 0.2s;
+    }
+    .nav-drawer a:hover { color: var(--color-accent); }
+    .nav-drawer .btn { margin-top: 24px; justify-content: center; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 96px 24px 80px;
+      background:
+        radial-gradient(ellipse at 25% 75%, rgba(153,68,52,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 25%, rgba(203,114,70,0.10) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(26,17,8,0.8) 0%, transparent 80%),
+        var(--color-bg-dark);
+      overflow: hidden;
+    }
+
+    .hero-bg-text {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; user-select: none;
+    }
+    .hero-bg-text span {
+      font-family: var(--font-display);
+      font-size: min(40vw, 400px);
+      color: var(--color-accent);
+      opacity: 0.03; line-height: 1;
+    }
+
+    .hero-inner {
+      position: relative; z-index: 2;
+      width: 100%; max-width: 640px;
+    }
+
+    .hero-content {
+      display: flex; flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      color: var(--color-accent); margin-bottom: 16px;
+    }
+    .hero-eyebrow::before,
+    .hero-eyebrow::after { content: "★"; font-size: 0.5rem; }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(60px, 14vw, 108px);
+      line-height: 0.9; color: var(--color-fg);
+      margin-bottom: 24px;
+    }
+    .hero-title .accent { color: var(--color-accent); }
+    .hero-title .primary { color: var(--color-primary); }
+
+    .hero-subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: var(--color-fg-muted); margin-bottom: 28px;
+      line-height: 1.7; max-width: 480px;
+    }
+    .hero-subtitle strong { color: var(--color-fg); }
+
+    .hero-date-badge {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; align-items: center;
+      gap: 6px 14px; margin-bottom: 16px;
+      padding: 10px 22px; border-radius: 100px;
+      background: rgba(210,174,109,0.07);
+      border: 1px solid rgba(210,174,109,0.28);
+    }
+    .hero-date-item { font-size: 0.875rem; font-weight: 700; color: var(--color-accent); }
+    .hero-date-sep { color: var(--color-border); }
+    @media (max-width: 480px) { .hero-date-sep { display: none; } }
+
+    .hero-prize {
+      width: 100%;
+      background: linear-gradient(135deg, rgba(210,174,109,0.11) 0%, rgba(153,68,52,0.07) 100%);
+      border: 1px solid rgba(210,174,109,0.4);
+      border-radius: var(--radius-lg);
+      padding: 24px 32px; margin-bottom: 32px;
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+    }
+    .hero-prize-label {
+      font-size: 0.68rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.18em;
+      color: var(--color-fg-muted);
+    }
+    .hero-prize-value {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 10vw, 5.5rem);
+      color: var(--color-accent); line-height: 1;
+    }
+    .hero-prize-sub { font-size: 0.72rem; color: var(--color-fg-muted); }
+
+    .hero-ctas {
+      display: flex; flex-direction: column;
+      gap: 12px; align-items: center; justify-content: center;
+      width: 100%; margin-bottom: 40px;
+    }
+    @media (min-width: 480px) { .hero-ctas { flex-direction: row; } }
+
+    .hero-social-proof {
+      display: flex; align-items: center; justify-content: center;
+      width: 100%; padding: 20px 24px;
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,0.025);
+      border: 1px solid var(--color-border);
+    }
+    .hero-sp-item {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 3px; padding: 0 24px; flex: 1;
+    }
+    .hero-sp-number {
+      font-family: var(--font-display);
+      font-size: 1.75rem; color: var(--color-accent); line-height: 1;
+    }
+    .hero-sp-label {
+      font-size: 0.66rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--color-fg-muted);
+    }
+    .hero-sp-divider { width: 1px; height: 40px; background: var(--color-border); flex-shrink: 0; }
+    @media (max-width: 480px) { .hero-sp-divider { display: none; } }
+
+
+    /* ============================================================
+       SECTION HEADER (shared)
+    ============================================================ */
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-header .label {
+      display: block; font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--color-primary); margin-bottom: 12px;
+    }
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 46px);
+      color: var(--color-fg); margin-bottom: 12px;
+    }
+    .section-header p { color: var(--color-fg-muted); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+
+    /* ============================================================
+       ABOUT
+    ============================================================ */
+    .about { background: var(--color-bg-mid); border-top: 1px solid var(--color-border); }
+    .about-inner {
+      display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center;
+    }
+    @media (min-width: 768px) {
+      .about-inner { grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; padding-top: 8px; }
+    }
+
+    .about .section-label-top {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--color-primary); margin-bottom: 12px;
+    }
+    .about h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 44px); color: var(--color-fg);
+    }
+    .about-body { color: var(--color-fg-muted); line-height: 1.8; }
+    .about-body p + p { margin-top: 16px; }
+    .about-body strong { color: var(--color-fg); }
+
+    .about-callout {
+      margin-top: 24px; padding: 16px 24px;
+      border-left: 3px solid var(--color-primary);
+      background: rgba(153,68,52,0.07);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic; color: var(--color-fg); font-size: 1.02rem;
+      line-height: 1.5;
+    }
+
+    .about-img {
+      aspect-ratio: 4/3; background: var(--color-bg-subtle);
+      border-radius: var(--radius-lg); border: 1px solid rgba(210, 174, 109, 0.25);
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.45);
+    }
+    .about-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .placeholder-tag {
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--color-fg-muted); opacity: 0.4;
+    }
+
+    /* ============================================================
+       MODALITIES
+    ============================================================ */
+    .modalities { background: var(--color-bg-dark); }
+
+    .modalities-grid {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+    }
+    @media (min-width: 640px) { .modalities-grid { grid-template-columns: 1fr 1fr; } }
+
+    .card {
+      background: var(--color-bg-subtle); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 32px 28px;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .card:hover { border-color: rgba(210,174,109,0.45); box-shadow: 0 8px 32px rgba(0,0,0,0.45); }
+
+    .card-type {
+      font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.14em; color: var(--color-accent); margin-bottom: 6px;
+    }
+    .card h3 {
+      font-family: var(--font-display); font-size: 2rem;
+      color: var(--color-fg); margin-bottom: 14px; line-height: 1.1;
+    }
+    .card p { color: var(--color-fg-muted); font-size: 0.91rem; line-height: 1.75; }
+
+    .card-amador { border-left: 3px solid var(--color-category-amador); }
+    .card-amador .card-type { color: #66BB6A; }
+    .card-pro { border-left: 3px solid var(--color-category-pro); }
+    .card-pro .card-type { color: #CE93D8; }
+
+    .divider-text {
+      text-align: center; padding: 28px 0 20px;
+      font-size: 0.7rem; color: var(--color-fg-muted);
+      text-transform: uppercase; letter-spacing: 0.18em;
+    }
+
+    .modalities-note {
+      text-align: center; margin-top: 36px; font-size: 0.83rem;
+      color: var(--color-fg-muted); border-top: 1px solid var(--color-border);
+      padding-top: 28px; letter-spacing: 0.01em;
+    }
+
+    /* ============================================================
+       FORMAT
+    ============================================================ */
+    .format {
+      background: var(--color-bg-mid);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .format-grid {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+    }
+    @media (min-width: 640px) { .format-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .format-grid { grid-template-columns: 1fr 1fr; } } /* reason: 4 cards ficam 2+2 equilibrado; 3col deixava 3+1 órfão */
+
+    .format-item {
+      display: flex; gap: 16px;
+      padding: 24px; background: var(--color-bg-subtle);
+      border-radius: var(--radius-lg); border: 1px solid var(--color-border);
+    }
+    .format-num {
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: var(--color-primary); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.1rem;
+    }
+    .format-text h3 { font-weight: 700; color: var(--color-fg); margin-bottom: 8px; font-size: 0.93rem; }
+    .format-text p { color: var(--color-fg-muted); font-size: 0.88rem; line-height: 1.65; }
+
+    .format-cta { text-align: center; margin-top: 40px; }
+
+
+    /* ============================================================
+       STAGES
+    ============================================================ */
+    .stages { background: var(--color-bg-dark); }
+    .stages-grid {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+    }
+    @media (min-width: 640px) { .stages-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .stage-card {
+      background: var(--color-bg-subtle); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .stage-card:hover { transform: translateY(-3px); border-color: rgba(210,174,109,0.35); }
+
+    .stage-card-head {
+      background: var(--color-primary); padding: 12px 24px;
+    }
+    .stage-card:last-child .stage-card-head {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    }
+    .stage-tag {
+      font-family: var(--font-display); font-size: 1.15rem;
+      color: #fff; letter-spacing: 0.04em;
+    }
+
+    .stage-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; gap: 14px; }
+
+    .stage-row { display: flex; align-items: flex-start; gap: 12px; }
+    .stage-row-icon { color: var(--color-accent); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+    .stage-row-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-fg-muted); }
+    .stage-row-value { color: var(--color-fg); font-weight: 600; font-size: 0.9rem; }
+    .stage-row-tbd { color: var(--color-fg-muted); font-style: italic; font-size: 0.85rem; }
+
+    .stage-status {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 12px; border-radius: 100px;
+      font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.07em;
+    }
+    .stage-status-soon {
+      background: rgba(210,174,109,0.1);
+      color: var(--color-accent);
+      border: 1px solid rgba(210,174,109,0.2);
+    }
+    .stage-status-open {
+      background: rgba(46,125,50,0.15);
+      color: #66BB6A;
+      border: 1px solid rgba(46,125,50,0.3);
+    }
+    .stage-status-open::before { content: "●"; font-size: 0.45rem; animation: blink 1.4s infinite; }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+
+    .stage-card-foot { padding: 16px 24px; border-top: 1px solid var(--color-border); }
+
+    .stages-note {
+      text-align: center; margin-top: 32px;
+      font-size: 0.85rem; color: var(--color-fg-muted);
+    }
+
+    /* ============================================================
+       INSCRIPTIONS
+    ============================================================ */
+    .inscriptions { background: var(--color-bg-mid); border-top: 1px solid var(--color-border); }
+    .inscriptions-grid {
+      display: grid; grid-template-columns: 1fr; gap: 48px;
+    }
+    @media (min-width: 768px) {
+      .inscriptions-grid { grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: start; }
+    }
+
+    .inscriptions h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 44px); color: var(--color-fg);
+      margin-bottom: 8px;
+    }
+    .inscriptions-sub { color: var(--color-fg-muted); margin-bottom: 28px; }
+
+    .step { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--color-border); }
+    .step:last-of-type { border-bottom: none; }
+    .step-n {
+      flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
+      border: 2px solid var(--color-primary);
+      color: var(--color-primary); display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1rem;
+    }
+    .step-text { color: var(--color-fg-muted); font-size: 0.93rem; padding-top: 4px; line-height: 1.5; }
+    .step-text strong { color: var(--color-fg); }
+
+    .inscriptions-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+
+    .inscriptions-fine { margin-top: 16px; font-size: 0.8rem; color: var(--color-fg-muted); }
+    .inscriptions-fine a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Price packs */
+    .price-packs {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 12px;
+      margin-bottom: 28px;
+    }
+    .price-pack {
+      background: var(--color-bg-subtle); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); padding: 16px 12px; text-align: center;
+      position: relative;
+    }
+    .price-pack-best {
+      border-color: var(--color-accent);
+      background: rgba(210,174,109,0.06);
+    }
+    .price-pack-tag {
+      position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+      background: var(--color-accent); color: #0D0807;
+      font-size: 0.62rem; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.08em; padding: 2px 10px; border-radius: 100px;
+      white-space: nowrap;
+    }
+    .price-pack-label {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--color-fg-muted); margin-bottom: 6px;
+    }
+    .price-pack-value {
+      font-family: var(--font-display); font-size: 1.6rem;
+      color: var(--color-fg); line-height: 1;
+    }
+    .price-pack-best .price-pack-value { color: var(--color-accent); }
+    .price-pack-sub {
+      font-size: 0.72rem; color: var(--color-fg-muted); margin-top: 4px;
+    }
+
+    /* Urgency bar */
+    .urgency-bar {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 16px; border-radius: var(--radius);
+      background: rgba(46,125,50,0.1); border: 1px solid rgba(46,125,50,0.25);
+      font-size: 0.85rem; color: var(--color-fg-muted);
+      margin-bottom: 20px;
+    }
+    .urgency-bar strong { color: #66BB6A; }
+    .urgency-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #66BB6A; flex-shrink: 0;
+      animation: blink 1.4s infinite;
+    }
+
+    /* FAQ */
+    .faq { background: var(--color-bg-dark); border-top: 1px solid var(--color-border); }
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 40px; }
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--color-border); }
+    .faq-q {
+      width: 100%; text-align: left; padding: 20px 0;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px; cursor: pointer; background: none; border: none;
+      color: var(--color-fg); font-family: var(--font-primary);
+      font-size: 0.97rem; font-weight: 700; line-height: 1.4;
+    }
+    .faq-q:hover { color: var(--color-accent); }
+    .faq-icon {
+      flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+      border: 1px solid var(--color-border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: var(--color-primary);
+      transition: transform 0.25s;
+    }
+    .faq-item.is-open .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      display: none; padding: 0 0 20px;
+      color: var(--color-fg-muted); font-size: 0.92rem; line-height: 1.75;
+    }
+    .faq-item.is-open .faq-a { display: block; }
+
+    .rules-box {
+      background: var(--color-bg-subtle); border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+      padding: 24px;
+    }
+    .rules-box h3 {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: 16px;
+    }
+    .rules-box li {
+      display: flex; gap: 12px; color: var(--color-fg-muted);
+      font-size: 0.9rem; padding: 8px 0; border-bottom: 1px solid var(--color-border);
+      align-items: flex-start;
+    }
+    .rules-box li:last-child { border-bottom: none; }
+    .rules-box li::before { content: "→"; color: var(--color-primary); flex-shrink: 0; font-weight: 700; }
+
+    /* ============================================================
+       PRIZES
+    ============================================================ */
+    .prizes { background: var(--color-bg-dark); }
+    .prizes-wrap {
+      overflow-x: auto; margin-top: 40px;
+      border-radius: var(--radius-lg); border: 1px solid var(--color-border);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    thead tr { background: var(--color-bg-subtle); }
+    th {
+      padding: 16px; text-align: left; font-weight: 700;
+      font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em;
+      color: var(--color-accent); border-bottom: 1px solid var(--color-border);
+      white-space: nowrap;
+    }
+    td {
+      padding: 16px; color: var(--color-fg-muted);
+      border-bottom: 1px solid var(--color-border);
+    }
+    td:first-child { color: var(--color-fg); font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(255,255,255,0.015); }
+    .row-champion td { background: rgba(210,174,109,0.05); }
+    .row-champion td:first-child { color: var(--color-accent); }
+    .tbd { color: var(--color-fg-muted); opacity: 0.45; font-style: italic; }
+    .prizes-note {
+      text-align: center; margin-top: 24px;
+      font-size: 0.82rem; color: var(--color-fg-muted);
+    }
+
+    /* ============================================================
+       DIFFERENTIALS
+    ============================================================ */
+    .differentials { background: var(--color-bg-mid); border-top: 1px solid var(--color-border); }
+    .diff-grid {
+      display: grid; grid-template-columns: 1fr; gap: 16px;
+    }
+    @media (min-width: 640px) { .diff-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .diff-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .diff-item {
+      padding: 28px; background: var(--color-bg-subtle);
+      border-radius: var(--radius-lg); border: 1px solid var(--color-border);
+      transition: border-color 0.2s;
+    }
+    .diff-item:hover { border-color: rgba(153,68,52,0.45); }
+    .diff-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .diff-item h3 { font-weight: 700; color: var(--color-fg); margin-bottom: 10px; font-size: 0.93rem; }
+    .diff-item p { color: var(--color-fg-muted); font-size: 0.88rem; line-height: 1.65; }
+
+    /* ============================================================
+       SPONSORSHIP
+    ============================================================ */
+    .sponsorship { background: var(--color-bg-dark); border-top: 1px solid var(--color-border); }
+    .sponsorship-center {
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 36px;
+    }
+    .sponsorship h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 44px); color: var(--color-fg); margin: 0;
+    }
+    .sponsorship-body {
+      color: var(--color-fg-muted); line-height: 1.75; margin: 0;
+      max-width: 560px;
+    }
+    .sponsors-logos {
+      display: flex; flex-direction: row; flex-wrap: wrap;
+      justify-content: center; align-items: center; gap: 16px;
+    }
+    .sponsor-logo-wrap {
+      width: 210px; height: 140px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .sponsor-logo-wrap--wide { width: 360px; height: 150px; }
+    .sponsor-logo-wrap img {
+      width: 100%; height: 100%; object-fit: contain;
+    }
+
+    /* ============================================================
+       CONTACT
+    ============================================================ */
+    .contact { background: var(--color-bg-mid); border-top: 1px solid var(--color-border); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr; gap: 48px;
+    }
+    @media (min-width: 768px) { .contact-grid { grid-template-columns: 1fr 1fr; gap: 64px; } }
+
+    .contact-block h3 {
+      font-family: var(--font-display); font-size: 1.8rem;
+      color: var(--color-fg); margin-bottom: 12px;
+    }
+    .contact-block-bar {
+      width: 40px; height: 3px; background: var(--color-primary); margin-bottom: 20px;
+    }
+    .contact-block p { color: var(--color-fg-muted); font-size: 0.93rem; line-height: 1.7; margin-bottom: 24px; }
+
+    .contact-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .contact-icon {
+      width: 40px; height: 40px; border-radius: var(--radius);
+      background: rgba(153,68,52,0.1); border: 1px solid rgba(153,68,52,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+    .contact-row-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--color-fg-muted); }
+    .contact-row-value { color: var(--color-fg); font-style: italic; font-size: 0.9rem; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background: var(--color-bg-dark);
+      border-top: 2px solid var(--color-primary);
+      padding: 48px 0 24px;
+    }
+    .footer-top {
+      display: flex; flex-direction: column; gap: 28px;
+      margin-bottom: 32px;
+    }
+    @media (min-width: 768px) {
+      .footer-top { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+    }
+    .footer-logo { height: 30px; }
+    .footer-info { font-size: 0.85rem; color: var(--color-fg-muted); line-height: 1.9; }
+    .footer-info .hl { color: var(--color-accent); }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a {
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--color-fg-muted);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--color-accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--color-border); padding-top: 20px;
+      font-size: 0.75rem; color: var(--color-fg-muted); opacity: 0.4;
+      text-align: center;
+    }
+
+    /* ============================================================
+       SISTEMA DE INSCRIÇÃO — PRO HAD 2026
+    ============================================================ */
+    .reg-form { max-width: 680px; margin: 0 auto; }
+
+    /* Barra de progresso linear */
+    .reg-progress { margin-bottom: 32px; }
+    .reg-prog-meta {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 10px;
+    }
+    .reg-prog-label { font-size: 0.82rem; font-weight: 700; color: var(--color-fg); letter-spacing: 0.01em; }
+    .reg-prog-pct   { font-family: var(--font-display); font-size: 1.1rem; color: var(--color-accent); letter-spacing: 0.03em; }
+    .reg-prog-track { height: 5px; background: var(--color-border); border-radius: 99px; overflow: hidden; }
+    .reg-prog-fill  { height: 100%; background: var(--color-primary); border-radius: 99px; transition: width 0.45s cubic-bezier(.4,0,.2,1); }
+
+    /* Panels */
+    .reg-panel { display: none; background: var(--color-bg-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px; animation: regIn 0.28s ease; }
+    .reg-panel.active { display: block; }
+    @keyframes regIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+    .reg-panel-header { margin-bottom: 28px; }
+    .reg-panel-header h3 { font-family: var(--font-display); font-size: 2rem; color: var(--color-fg); margin-bottom: 6px; }
+    .reg-panel-header p  { color: var(--color-fg-muted); font-size: 0.9rem; }
+
+    /* Fields */
+    .reg-row   { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+    .reg-field { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 140px; }
+    .reg-field-xs { flex: 0 0 120px; }
+    .reg-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.11em; color: var(--color-fg-muted); }
+    .reg-opt   { font-weight: 400; opacity: 0.55; text-transform: none; letter-spacing: 0; }
+    .reg-input {
+      background: var(--color-bg-dark); border: 1px solid var(--color-border);
+      border-radius: var(--radius); padding: 12px 16px;
+      color: var(--color-fg); font-family: var(--font-primary); font-size: 0.95rem;
+      width: 100%; transition: border-color 0.2s;
+    }
+    .reg-input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(210,174,109,0.08); }
+    .reg-input::placeholder { color: var(--color-fg-muted); opacity: 0.45; }
+    select.reg-input option { background: var(--color-bg-dark); }
+
+    /* Radio */
+    .reg-radios { display: flex; gap: 10px; }
+    .reg-radio  { display: flex; align-items: center; justify-content: center; gap: 8px; flex: 1; cursor: pointer; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-size: 0.9rem; font-weight: 600; color: var(--color-fg-muted); background: var(--color-bg-dark); transition: all 0.2s; }
+    .reg-radio input { display: none; }
+    .reg-radio.selected { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.1); }
+    .reg-radio:hover { border-color: var(--color-fg-muted); }
+
+    /* Buttons +/- para contadores */
+    .reg-cbtn {
+      width: 44px; height: 44px; border-radius: var(--radius);
+      border: 1px solid var(--color-border); background: var(--color-bg-subtle);
+      color: var(--color-fg); font-size: 1.5rem; font-weight: 300;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: all 0.14s; user-select: none;
+    }
+    .reg-cbtn:hover:not(:disabled) { background: var(--color-primary); border-color: var(--color-primary); }
+    .reg-cbtn:disabled { opacity: 0.25; cursor: not-allowed; }
+
+    /* Cards de conjunto */
+    .conj-card { background: var(--color-bg-dark); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px; animation: regIn 0.25s ease; }
+    .conj-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .conj-num  { font-family: var(--font-display); font-size: 1.1rem; color: var(--color-accent); letter-spacing: 0.04em; }
+    .conj-remove {
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 1px solid var(--color-border); background: none;
+      color: var(--color-fg-muted); font-size: 1.1rem; line-height: 1;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-primary); transition: all 0.15s;
+    }
+    .conj-remove:hover { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.12); }
+    .conj-counters { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+    .conj-cnt-row {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 10px 14px;
+      background: var(--color-bg-subtle); border-radius: var(--radius);
+      border: 1px solid var(--color-border); transition: border-color 0.15s;
+    }
+    .conj-cnt-row.active { border-color: rgba(153,68,52,0.4); }
+    .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--color-fg-muted); flex: 1; }
+    .conj-cnt-ctrl  { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
+    .conj-cnt-num   { min-width: 40px; text-align: center; font-family: var(--font-display); font-size: 1.8rem; color: var(--color-fg); line-height: 1; }
+    .conj-subtotal  { text-align: right; font-size: 0.78rem; color: var(--color-fg-muted); min-height: 16px; margin-bottom: 4px; }
+    .conj-add-btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; padding: 14px; border: 2px dashed var(--color-border);
+      border-radius: var(--radius-lg); background: transparent; color: var(--color-fg-muted);
+      font-size: 0.85rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+      cursor: pointer; font-family: var(--font-primary); transition: all 0.2s; margin-bottom: 24px;
+    }
+    .conj-add-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+    /* Price display */
+    .reg-price {
+      background: var(--color-bg-dark); border: 1px solid rgba(210,174,109,0.25);
+      border-radius: var(--radius-lg); padding: 20px 24px;
+      display: flex; align-items: center; flex-wrap: wrap; gap: 16px 40px;
+    }
+    .reg-price-col    { display: flex; flex-direction: column; gap: 4px; }
+    .reg-price-lbl    { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-fg-muted); }
+    .reg-price-big    { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; }
+    .reg-price-big.num { color: var(--color-fg); }
+    .reg-price-big.val { color: var(--color-accent); }
+    .reg-price-break  { width: 100%; font-size: 0.78rem; color: var(--color-fg-muted); border-top: 1px solid var(--color-border); padding-top: 12px; }
+
+    /* Tarifa desbloqueada */
+    .reg-unlock {
+      width: 100%; display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px; margin-top: 12px;
+      background: rgba(210,174,109,0.08); border: 1px solid rgba(210,174,109,0.3);
+      border-radius: var(--radius); font-size: 0.85rem;
+      color: var(--color-accent); font-weight: 700;
+    }
+    .reg-unlock::before { content: "★ "; }
+
+    /* Summary card */
+    .reg-summary { background: var(--color-bg-dark); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 24px; }
+    .reg-sum-head { background: var(--color-primary); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .reg-sum-head-name  { font-family: var(--font-display); font-size: 1.3rem; color: #fff; }
+    .reg-sum-head-etapa { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.65); }
+    .reg-sum-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; }
+    .reg-sum-block h4 { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-primary); margin-bottom: 10px; }
+    .reg-sum-row { display: flex; gap: 8px; font-size: 0.88rem; padding: 7px 0; border-bottom: 1px solid var(--color-border); }
+    .reg-sum-row:last-child { border-bottom: none; }
+    .reg-sum-k { color: var(--color-fg-muted); flex: 0 0 110px; }
+    .reg-sum-v { color: var(--color-fg); font-weight: 600; }
+    .reg-sum-cat-n { color: var(--color-fg-muted); }
+    .reg-sum-cat-q { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-accent); }
+    .reg-sum-cat.zero .reg-sum-cat-q { color: var(--color-border); }
+    .reg-sum-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: rgba(210,174,109,0.05); border: 1px solid rgba(210,174,109,0.18); border-radius: var(--radius); }
+    .reg-sum-total-lbl { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-fg-muted); margin-bottom: 4px; }
+    .reg-sum-total-cnt { font-family: var(--font-display); font-size: 1.4rem; color: var(--color-fg); }
+    .reg-sum-total-sub { font-size: 0.75rem; color: var(--color-fg-muted); margin-top: 4px; }
+    .reg-sum-total-val { font-family: var(--font-display); font-size: 2.4rem; color: var(--color-accent); }
+
+    /* Nav + errors */
+    .reg-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--color-border); }
+    .reg-errors { background: rgba(153,68,52,0.1); border: 1px solid rgba(153,68,52,0.3); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
+    .reg-errors p { font-size: 0.86rem; color: #EF9A9A; margin-bottom: 4px; }
+    .reg-errors p:last-child { margin-bottom: 0; }
+    .reg-errors p::before { content: "⚠ "; }
+    .reg-finish { padding: 15px 36px; font-size: 1rem; min-height: 52px; }
+    .reg-wa-note { text-align: center; font-size: 0.8rem; color: var(--color-fg-muted); margin-top: 16px; line-height: 1.65; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(18px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .mod-animate {
+        opacity: 0;
+      }
+
+      .mod-animate.is-visible {
+        animation: fadeUp 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .mod-animate-d1.is-visible { animation-delay: 80ms; }
+      .mod-animate-d2.is-visible { animation-delay: 160ms; }
+      .mod-animate-d3.is-visible { animation-delay: 240ms; }
+      .mod-animate-d4.is-visible { animation-delay: 320ms; }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mod-animate { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero">
+        <img src="assets/logo-horizontal.png" alt="Pro Had — Circuito Nacional de Pastoreio com Cães" class="nav-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">O Circuito</a></li>
+        <li><a href="#modalities">Modalidades</a></li>
+        <li><a href="#inscriptions">Inscrições</a></li>
+        <li><a href="#prizes">Premiação</a></li>
+        <li><a href="#sponsorship">Patrocínio</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#inscriptions" class="btn btn-primary btn-sm nav-cta-desktop">Inscrever-se</a>
+        <button class="hamburger" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="nav-drawer" id="drawer">
+    <a href="#about" onclick="closeDrawer()">O Circuito</a>
+    <a href="#modalities" onclick="closeDrawer()">Modalidades</a>
+    <a href="#inscriptions" onclick="closeDrawer()">Inscrições</a>
+    <a href="#prizes" onclick="closeDrawer()">Premiação</a>
+    <a href="#sponsorship" onclick="closeDrawer()">Patrocínio</a>
+    <a href="#contact" onclick="closeDrawer()">Regulamento &amp; Contato</a>
+    <a href="#inscriptions" class="btn btn-primary" onclick="closeDrawer()">Inscrever na Etapa 1</a>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 1 — HERO
+  ══════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text" aria-hidden="true"><span>★</span></div>
+
+    <div class="hero-inner">
+
+      <!-- COLUNA TEXTO -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">Etapa 1 — Temporada 2026</div>
+
+        <h1 class="hero-title">
+          Circuito<br>
+          Pro <span class="accent">Had</span><br>
+          <span class="primary">2026</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <strong>Competição de alto nível.</strong><br>
+          Tradição, técnica e espírito esportivo em um único palco.<br>
+          Amador e Profissional. Julgamento soberano.
+        </p>
+
+        <div class="hero-date-badge">
+          <span class="hero-date-item">27 e 28 de Junho de 2026</span>
+          <span class="hero-date-sep">|</span>
+          <span class="hero-date-item">Uberlândia — MG</span>
+        </div>
+
+        <div class="hero-prize">
+          <span class="hero-prize-label">Premiação Total</span>
+          <div class="hero-prize-value">R$ 40.000</div>
+          <span class="hero-prize-sub">em premiação distribuída</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#inscriptions" class="btn btn-primary">Inscrever meu conjunto</a>
+          <a href="assets/regulamento-prohad-2026.pdf" class="btn btn-outline" target="_blank" rel="noopener">Ver regulamento</a>
+        </div>
+
+        <div class="hero-social-proof">
+          <div class="hero-sp-item">
+            <span class="hero-sp-number">2</span>
+            <span class="hero-sp-label">Modalidades</span>
+          </div>
+          <div class="hero-sp-divider"></div>
+          <div class="hero-sp-item">
+            <span class="hero-sp-number">2</span>
+            <span class="hero-sp-label">Categorias</span>
+          </div>
+          <div class="hero-sp-divider"></div>
+          <div class="hero-sp-item">
+            <span class="hero-sp-number">R$40k</span>
+            <span class="hero-sp-label">Em jogo</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 2 — O QUE É O PRO HAD
+  ══════════════════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div>
+          <p class="section-label-top">O Circuito</p>
+          <h2>Pastoreio com cães em nível de circuito nacional.</h2>
+          <div class="section-divider"></div>
+          <div class="about-body">
+            <p>O Pro Had é um circuito com <strong>3 etapas por temporada</strong>, criado para elevar o pastoreio com cães a um nível de competição organizado, justo e com presença nacional.</p>
+            <p>Cada prova acontece em pista delimitada com <strong>3 cabeças de bovinos</strong>. O conjunto — cão e competidor — conduz o rebanho com a maior pontuação no menor tempo.</p>
+            <p><strong>Amador compete com Amador. Profissional compete com Profissional.</strong> As categorias nunca se cruzam dentro da pista.</p>
+          </div>
+          <blockquote class="about-callout">
+            "Regulamento público. Critérios claros. Resultado que você pode questionar se tiver razão."
+          </blockquote>
+          <div style="margin-top:24px;">
+            <a href="assets/regulamento-prohad-2026.pdf" target="_blank" class="btn btn-ghost btn-sm">Ver regulamento completo</a>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="../VIDEO_HERO/FOTO_SITE_01.png" alt="Prova Pro Had — cão e competidor conduzindo o rebanho">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 3 — MODALIDADES E CATEGORIAS
+  ══════════════════════════════════════════════════════ -->
+  <section class="modalities" id="modalities">
+    <div class="container">
+      <div class="section-header mod-animate">
+        <span class="label">Modalidades &amp; Categorias</span>
+        <h2>Em qual modalidade e categoria você compete?</h2>
+        <p>Escolha certa antes de abrir a inscrição.</p>
+      </div>
+
+      <div class="modalities-grid">
+        <div class="card mod-animate mod-animate-d1">
+          <div class="card-type">Modalidade</div>
+          <h3>One Foot</h3>
+          <p>O competidor conduz o conjunto a pé. A comunicação entre cão e guia acontece no campo — sem montar, sem distância.</p>
+        </div>
+        <div class="card mod-animate mod-animate-d2">
+          <div class="card-type">Modalidade</div>
+          <h3>Horseback</h3>
+          <p>O competidor conduz o conjunto montado a cavalo. A leitura do rebanho e o comando do cão são feitos de cima da sela.</p>
+        </div>
+      </div>
+
+      <div class="divider-text">— Escolha sua categoria —</div>
+
+      <div class="modalities-grid">
+        <div class="card card-amador mod-animate mod-animate-d3">
+          <div style="margin-bottom:14px;"><span class="badge badge-amador">Amador</span></div>
+          <div class="card-type">Categoria</div>
+          <h3>Amador</h3>
+          <p>Para conjuntos em desenvolvimento de técnica e competição. Você disputa apenas contra outros conjuntos da mesma categoria.</p>
+        </div>
+        <div class="card card-pro mod-animate mod-animate-d4">
+          <div style="margin-bottom:14px;"><span class="badge badge-pro">Profissional</span></div>
+          <div class="card-type">Categoria</div>
+          <h3>Profissional</h3>
+          <p>Para conjuntos com nível técnico avançado e histórico competitivo. Você disputa apenas contra outros conjuntos da mesma categoria.</p>
+        </div>
+      </div>
+
+      <p class="modalities-note">Você pode competir em uma ou nas duas modalidades.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 4 — FORMATO DA COMPETIÇÃO
+  ══════════════════════════════════════════════════════ -->
+  <section class="format" id="format">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Como funciona</span>
+        <h2>Como funciona a prova.</h2>
+        <p>Sem surpresa no regulamento, sem dúvida na pista.</p>
+      </div>
+      <div class="format-grid">
+        <div class="format-item">
+          <div class="format-num">1</div>
+          <div class="format-text">
+            <h3>3 cabeças de bovinos por prova</h3>
+            <p>Cada conjunto trabalha com um lote de 3 cabeças em pista delimitada. Critério: maior pontuação no menor tempo.</p>
+          </div>
+        </div>
+        <!-- reason: card "1 conjunto por dia de prova" removido — informação incorreta, decisão do cliente -->
+        <div class="format-item">
+          <div class="format-num">2</div><!-- reason: renumerado de 3→2 após remoção do card anterior -->
+          <div class="format-text">
+            <h3>Reunião técnica obrigatória</h3>
+            <p>Antes de cada etapa, todos participam da reunião técnica. Presença obrigatória — sem exceção.</p>
+          </div>
+        </div>
+        <div class="format-item">
+          <div class="format-num">3</div><!-- reason: renumerado de 4→3 -->
+          <div class="format-text">
+            <h3>Recurso Boi TV</h3>
+            <p>Acredita que o juiz errou? Acione o Boi TV. Erro confirmado: taxa devolvida. Julgamento mantido: penalidade aplicada. Recurso sério para uso sério.</p>
+          </div>
+        </div>
+        <div class="format-item">
+          <div class="format-num">4</div><!-- reason: renumerado de 5→4 -->
+          <div class="format-text">
+            <h3>Juiz soberano</h3>
+            <p>Decisão final dentro dos critérios do regulamento. Os critérios são públicos — você os conhece antes de entrar na pista.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="format-cta">
+        <a href="#contact" class="btn btn-ghost">Ver regulamento completo</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 6 — INSCRIÇÕES (SISTEMA PREMIUM)
+  ══════════════════════════════════════════════════════ -->
+  <section class="inscriptions" id="inscriptions">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Inscrições — Etapa 1</span>
+        <h2>Inscreva seu conjunto.</h2>
+        <p>27 e 28 de Junho · Uberlândia — MG · R$ 40.000 em premiação</p>
+      </div>
+
+      <div class="reg-form" id="regForm">
+
+        <!-- Barra de progresso -->
+        <div class="reg-progress">
+          <div class="reg-prog-meta">
+            <span class="reg-prog-label" id="progLabel">Etapa 1 de 4 — Competidor</span>
+            <span class="reg-prog-pct" id="progPct">25%</span>
+          </div>
+          <div class="reg-prog-track">
+            <div class="reg-prog-fill" id="progFill" style="width:25%"></div>
+          </div>
+        </div>
+
+        <!-- ETAPA 1 — Competidor -->
+        <div class="reg-panel active" id="panel-1">
+          <div class="reg-panel-header">
+            <h3>Quem vai competir?</h3>
+            <p>Informe seus dados para a inscrição.</p>
+          </div>
+          <div class="reg-row">
+            <div class="reg-field">
+              <label class="reg-label" for="fName">Nome Completo *</label>
+              <input type="text" class="reg-input" id="fName" placeholder="Seu nome completo" autocomplete="name">
+            </div>
+            <div class="reg-field reg-field-xs">
+              <label class="reg-label" for="fShirt">Camisa *</label>
+              <select class="reg-input" id="fShirt">
+                <option value="">—</option>
+                <option>PP</option><option>P</option><option>M</option>
+                <option>G</option><option>GG</option><option>XG</option><option>XXG</option>
+              </select>
+            </div>
+          </div>
+          <div class="reg-row" style="margin-top:4px">
+            <div class="reg-field">
+              <label class="reg-label">Categoria do Competidor *</label>
+              <div class="reg-radios">
+                <label class="reg-radio" id="catAmador" data-tipo="amador" onclick="setTipoCompetidor('amador')">
+                  <input type="radio" name="tipoComp" style="display:none">Amador
+                </label>
+                <label class="reg-radio" id="catPro" data-tipo="profissional" onclick="setTipoCompetidor('profissional')">
+                  <input type="radio" name="tipoComp" style="display:none">Profissional
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="reg-errors" id="err-1" style="display:none;"></div>
+          <div class="reg-nav">
+            <div></div>
+            <button class="btn btn-primary" onclick="goStep(2)">Próximo →</button>
+          </div>
+        </div>
+
+        <!-- ETAPA 2 — Contato -->
+        <div class="reg-panel" id="panel-2">
+          <div class="reg-panel-header">
+            <h3>Dados de contato.</h3>
+            <p>Para confirmar a inscrição e enviar a chave PIX.</p>
+          </div>
+          <div class="reg-row">
+            <div class="reg-field">
+              <label class="reg-label" for="fWp">WhatsApp *</label>
+              <input type="tel" class="reg-input" id="fWp" placeholder="(00) 9 0000-0000" autocomplete="tel">
+            </div>
+          </div>
+          <div class="reg-row">
+            <div class="reg-field">
+              <label class="reg-label" for="fCity">Cidade *</label>
+              <input type="text" class="reg-input" id="fCity" placeholder="Sua cidade" autocomplete="address-level2">
+            </div>
+            <div class="reg-field reg-field-xs">
+              <label class="reg-label" for="fState">Estado *</label>
+              <select class="reg-input" id="fState">
+                <option value="">UF</option>
+                <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+                <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+                <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+                <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+                <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+                <option>SP</option><option>SE</option><option>TO</option>
+              </select>
+            </div>
+          </div>
+          <div class="reg-errors" id="err-2" style="display:none;"></div>
+          <div class="reg-nav">
+            <button class="btn btn-ghost btn-sm" onclick="goStep(1)">← Voltar</button>
+            <button class="btn btn-primary" onclick="goStep(3)">Próximo →</button>
+          </div>
+        </div>
+
+        <!-- ETAPA 3 — Inscrições dos Conjuntos -->
+        <div class="reg-panel" id="panel-3">
+          <div class="reg-panel-header">
+            <h3>Seus conjuntos.</h3>
+            <p>Adicione cada cão com sua categoria e número de inscrições.</p>
+          </div>
+          <div id="conjList"></div>
+          <button class="conj-add-btn" onclick="addConjunto()">+ Adicionar conjunto</button>
+          <div class="reg-price" id="regPrice" style="display:none;">
+            <div class="reg-price-col">
+              <span class="reg-price-lbl">Total de inscrições</span>
+              <span class="reg-price-big num" id="priceTotal">0</span>
+            </div>
+            <div class="reg-price-col">
+              <span class="reg-price-lbl">Valor total</span>
+              <span class="reg-price-big val" id="priceVal">R$ 0</span>
+            </div>
+            <div class="reg-price-break" id="priceBreak"></div>
+            <div class="reg-unlock" id="priceUnlock" style="display:none;">
+              Você desbloqueou a tarifa especial de R$ 300 por inscrição adicional!
+            </div>
+          </div>
+          <div class="reg-errors" id="err-3" style="display:none;"></div>
+          <div class="reg-nav">
+            <button class="btn btn-ghost btn-sm" onclick="goStep(2)">← Voltar</button>
+            <button class="btn btn-primary" onclick="goStep(4)">Ver resumo →</button>
+          </div>
+        </div>
+
+        <!-- ETAPA 4 — Confirmar -->
+        <div class="reg-panel" id="panel-4">
+          <div id="panel4Content">
+            <div class="reg-panel-header">
+              <h3>Confirme sua inscrição.</h3>
+              <p>Revise os dados — ao finalizar, a inscrição é registrada e o WhatsApp abre com seu código.</p>
+            </div>
+            <div class="reg-summary" id="regSummary"></div>
+            <div class="reg-errors" id="err-4" style="display:none;"></div>
+            <div class="reg-nav">
+              <button class="btn btn-ghost btn-sm" onclick="goStep(3)">← Voltar</button>
+              <button class="btn btn-primary reg-finish" id="finBtn" onclick="finalizar()">Finalizar Inscrição</button>
+            </div>
+            <p class="reg-wa-note">Sua inscrição é salva na planilha antes do WhatsApp ser aberto. O código gerado identifica você em toda comunicação futura.</p>
+          </div>
+          <div id="successState" style="display:none;">
+            <div class="reg-success">
+              <div class="reg-success-check">✓</div>
+              <h3>Inscrição registrada!</h3>
+              <p class="reg-success-subtitle">Seus dados foram salvos com sucesso.</p>
+              <div class="reg-success-id-label">Seu código de inscrição</div>
+              <div class="reg-success-id" id="successId">PROHAD-2026-00000</div>
+              <p class="reg-success-hint">Guarde este código. Ele identifica sua inscrição em toda comunicação com a equipe Pro Had.</p>
+              <div class="reg-success-status">
+                <span class="reg-success-dot"></span>
+                <span id="successStatusText">Abrindo WhatsApp...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /reg-form -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 7 — PREMIAÇÃO
+  ══════════════════════════════════════════════════════ -->
+  <section class="prizes" id="prizes">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Premiação — Etapa 1</span>
+        <h2>R$ 40.000 em premiação.</h2>
+        <p>R$ 10.000 por categoria — Amador Foot · Amador Horse · Pro Foot · Pro Horse</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 9 — PATROCÍNIO
+  ══════════════════════════════════════════════════════ -->
+  <section class="sponsorship" id="sponsorship">
+    <div class="container">
+      <div class="sponsorship-center">
+        <span class="label">Patrocínio</span>
+        <h2>Sua marca no maior circuito nacional de pastoreio com cães.</h2>
+        <p class="sponsorship-body">Conecte sua marca a um público qualificado e apaixonado. Visibilidade nacional, engajamento real.</p>
+        <div class="sponsors-logos">
+          <div class="sponsor-logo-wrap"><img src="assets/1.png" alt="Quatree"></div>
+          <div class="sponsor-logo-wrap"><img src="assets/2.png" alt="Pet on Board"></div>
+          <div class="sponsor-logo-wrap sponsor-logo-wrap--wide"><img src="assets/3.png" alt="Credicaf"></div>
+          <div class="sponsor-logo-wrap"><img src="assets/4.png" alt="Parceiro Pro Had"></div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Falar sobre patrocínio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEÇÃO 10 — REGULAMENTO + CONTATO
+  ══════════════════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>Regulamento oficial</h3>
+          <div class="contact-block-bar"></div>
+          <p>O regulamento completo do Circuito Pro Had 2026 está disponível antes das inscrições. Critérios de pontuação, regras de conduta, normas de inscrição, funcionamento do Boi TV e elegibilidade por categoria.</p>
+          <a href="assets/regulamento-prohad-2026.pdf" target="_blank" class="btn btn-outline">Baixar regulamento completo</a>
+        </div>
+        <div class="contact-block">
+          <h3>Fale com a organização</h3>
+          <div class="contact-block-bar"></div>
+          <p>Dúvidas sobre inscrição, regulamento ou patrocínio? Fale direto com a equipe Pro Had.</p>
+          <div class="contact-btns">
+            <a href="https://wa.me/5533999442876" target="_blank" class="btn btn-primary">WhatsApp</a>
+            <a href="https://instagram.com/pro_had_oficial" target="_blank" class="btn btn-outline">Instagram</a>
+            <a href="https://prohad.com.br" target="_blank" class="btn btn-outline">Site Oficial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Dúvidas frequentes</span>
+        <h2>Perguntas e respostas.</h2>
+        <p>Tudo que você precisa saber antes de se inscrever.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Posso competir em mais de uma modalidade?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Sim. Você pode se inscrever em One Foot (condução a pé), Horseback (condução montada) ou nas duas simultaneamente. Cada modalidade é independente e tem sua própria classificação.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Quantas vezes posso competir com o mesmo conjunto?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Cada conjunto (cão + competidor) pode realizar até 3 inscrições por categoria. As inscrições são independentes para efeito de classificação — um mesmo conjunto pode ocupar múltiplas posições no pódio. No dia da prova, é permitida apenas 1 inscrição por conjunto por categoria.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Como sou classificado como Amador ou Profissional?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Competidores que já correram provas regionais ou nacionais na categoria Open — seja em ovinos ou bovinos — são classificados automaticamente como Profissional. Para os demais, a Comissão Técnica avalia histórico, desempenho e nível técnico individual. A decisão da Comissão é soberana.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Competidor Amador pode competir também na categoria Profissional?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Sim. O competidor Amador pode se inscrever tanto na categoria Amador quanto na Profissional, com o mesmo cão ou com cães diferentes. O competidor Profissional, por sua vez, não pode competir na categoria Amador.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Como funciona o recurso "Boi TV"?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Se você acredita que o juiz cometeu um erro na avaliação, pode acionar o recurso Boi TV. O custo é equivalente a uma inscrição (R$ 400). Se o erro for confirmado, a decisão é revertida e a taxa é devolvida integralmente. Se o julgamento for mantido, a penalidade se aplica e a taxa não é devolvida. A análise é feita pelo juiz oficial em conjunto com a Comissão Técnica.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            O que é a reunião técnica e é obrigatória?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Sim, a presença é obrigatória para todos os inscritos. Antes de cada etapa, o juiz oficial apresenta as regras do percurso, os critérios de avaliação e esclarece dúvidas. Todos recebem as mesmas informações ao mesmo tempo — sem vantagem de informação para ninguém.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            O que acontece se eu ganhar 2 títulos Amador em 1 ano?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Você é automaticamente promovido à categoria Profissional. Uma vez promovido, não é possível retornar à categoria Amador. A promoção também pode ocorrer caso você vença na categoria Profissional durante uma participação permitida como Amador.</div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <img src="assets/logo-horizontal.png" alt="Pro Had" class="footer-logo">
+        <div class="footer-info">
+          Circuito Pro Had 2026 — Criado por <span class="hl">Adonis Colombo</span>.<br>
+          Parceria: <span class="hl">Radar Nation</span>.
+        </div>
+        <nav class="footer-links">
+          <a href="#about">O Circuito</a>
+          <a href="#modalities">Modalidades</a>
+          <a href="#contact">Regulamento</a>
+          <a href="#contact">Contato</a>
+          <a href="https://instagram.com/pro_had_oficial" target="_blank">@pro_had_oficial</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        Pro Had — Pastoreio com cães. Temporada 2026.
+      </div>
+    </div>
+  </footer>
+
+  <script defer>
+    // Mobile nav
+    const menuBtn = document.getElementById('menuBtn');
+    const drawer  = document.getElementById('drawer');
+    menuBtn.addEventListener('click', () => {
+      const open = drawer.classList.toggle('is-open');
+      menuBtn.classList.toggle('is-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      menuBtn.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.style.borderBottomColor = window.scrollY > 80
+        ? 'rgba(153,68,52,0.4)' : 'var(--color-border)';
+    }, { passive: true });
+
+    // FAQ accordion
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item.is-open').forEach(el => el.classList.remove('is-open'));
+      if (!isOpen) item.classList.add('is-open');
+    }
+
+    /* ============================================================
+       SISTEMA DE INSCRIÇÃO — PRO HAD 2026
+    ============================================================ */
+
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw27QrDUs_vQI2ctE8hfxn1KMzU_RcNmevQcbt8ijn2Opg7GgQ6kPfTbS-1CJGi3Nygiw/exec';
+
+    const STEP_LABELS = ['', 'Competidor', 'Contato', 'Inscrições', 'Confirmar'];
+    const CAT_LABELS  = { amadorFoot:'Amador One Foot', amadorHorse:'Amador Horseback', proFoot:'Pro One Foot', proHorse:'Pro Horseback' };
+    const RS = { step: 1, tipoCompetidor: '', conjuntos: [], nextId: 1 };
+
+    function updateProgress(n) {
+      document.getElementById('progLabel').textContent = `Etapa ${n} de 4 — ${STEP_LABELS[n]}`;
+      document.getElementById('progPct').textContent   = `${n * 25}%`;
+      document.getElementById('progFill').style.width  = `${n * 25}%`;
+    }
+
+    function goStep(n) {
+      const fwd = n > RS.step;
+      if (fwd && !validate(RS.step)) return;
+      document.getElementById(`panel-${RS.step}`).classList.remove('active');
+      RS.step = n;
+      document.getElementById(`panel-${n}`).classList.add('active');
+      updateProgress(n);
+      if (n === 4) buildSummary();
+      document.getElementById('regForm').scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+
+    function setTipoCompetidor(tipo) {
+      RS.tipoCompetidor = tipo;
+      document.getElementById('catAmador').classList.toggle('selected', tipo === 'amador');
+      document.getElementById('catPro').classList.toggle('selected', tipo === 'profissional');
+      if (RS.conjuntos.length > 0) renderConjuntos();
+    }
+
+    function validate(step) {
+      const errs = [];
+      if (step === 1) {
+        if (!v('fName'))  errs.push('Informe o nome completo do competidor.');
+        if (!document.getElementById('fShirt').value) errs.push('Selecione o tamanho da camisa.');
+        if (!RS.tipoCompetidor) errs.push('Selecione a categoria do competidor (Amador ou Profissional).');
+      }
+      if (step === 2) {
+        if (!v('fWp'))   errs.push('WhatsApp é obrigatório.');
+        if (!v('fCity')) errs.push('Cidade é obrigatória.');
+        if (!document.getElementById('fState').value) errs.push('Selecione o estado.');
+      }
+      if (step === 3) {
+        if (RS.conjuntos.length === 0) errs.push('Adicione pelo menos um conjunto.');
+        RS.conjuntos.forEach((c, i) => {
+          if (!c.nomeCao.trim()) errs.push(`Conjunto ${i+1}: informe o nome do cão.`);
+          if (!c.sexo)           errs.push(`Conjunto ${i+1}: selecione o sexo.`);
+          const total = Object.values(c.counts).reduce((a,b) => a+b, 0);
+          if (total === 0)       errs.push(`Conjunto ${i+1}: adicione pelo menos 1 inscrição.`);
+        });
+      }
+      showErr(`err-${step}`, errs);
+      return errs.length === 0;
+    }
+
+    function v(id) { return document.getElementById(id).value.trim(); }
+    function showErr(id, errs) {
+      const el = document.getElementById(id);
+      el.innerHTML = errs.map(e => `<p>${e}</p>`).join('');
+      el.style.display = errs.length ? 'block' : 'none';
+    }
+
+    function addConjunto() {
+      RS.conjuntos.push({ id: RS.nextId++, nomeCao: '', sexo: '', counts: { amadorFoot:0, amadorHorse:0, proFoot:0, proHorse:0 } });
+      renderConjuntos();
+    }
+    function removeConjunto(id) {
+      if (RS.conjuntos.length <= 1) return;
+      RS.conjuntos = RS.conjuntos.filter(c => c.id !== id);
+      renderConjuntos();
+    }
+    function updateConjunto(id, field, value) {
+      const c = RS.conjuntos.find(c => c.id === id);
+      if (!c) return;
+      c[field] = value;
+      if (field === 'sexo') {
+        const card = document.getElementById(`conj-${id}`);
+        if (card) card.querySelectorAll('.reg-radio').forEach(label =>
+          label.classList.toggle('selected', label.dataset.sexo === value));
+      }
+      updPriceConjuntos();
+    }
+    function chgConj(id, cat, d) {
+      const c = RS.conjuntos.find(c => c.id === id);
+      if (!c) return;
+      c.counts[cat] = Math.max(0, Math.min(3, c.counts[cat] + d));
+      document.getElementById(`cnt-${id}-${cat}`).textContent  = c.counts[cat];
+      document.getElementById(`btn-${id}-${cat}-m`).disabled   = (c.counts[cat] === 0);
+      document.getElementById(`btn-${id}-${cat}-p`).disabled   = (c.counts[cat] === 3);
+      const row = document.getElementById(`row-${id}-${cat}`);
+      if (row) row.classList.toggle('active', c.counts[cat] > 0);
+      const sub = Object.values(c.counts).reduce((a,b) => a+b, 0);
+      const subEl = document.getElementById(`sub-${id}`);
+      if (subEl) subEl.textContent = sub > 0 ? `${sub} inscrição${sub > 1 ? 'ões' : ''}` : '';
+      updPriceConjuntos();
+    }
+    function renderConjuntos() {
+      const list  = document.getElementById('conjList');
+      const multi = RS.conjuntos.length > 1;
+      const isPro = RS.tipoCompetidor === 'profissional';
+      list.innerHTML = RS.conjuntos.map((c, i) => {
+        const sub = Object.values(c.counts).reduce((a,b) => a+b, 0);
+        const amadorRows = isPro ? '' : `
+          <div class="conj-cnt-row${c.counts.amadorFoot>0?' active':''}" id="row-${c.id}-amadorFoot">
+            <span class="conj-cnt-label"><span class="badge badge-amador">Amador</span>&nbsp;One Foot</span>
+            <div class="conj-cnt-ctrl">
+              <button class="reg-cbtn" id="btn-${c.id}-amadorFoot-m" onclick="chgConj(${c.id},'amadorFoot',-1)"${c.counts.amadorFoot===0?' disabled':''}>−</button>
+              <span class="conj-cnt-num" id="cnt-${c.id}-amadorFoot">${c.counts.amadorFoot}</span>
+              <button class="reg-cbtn" id="btn-${c.id}-amadorFoot-p" onclick="chgConj(${c.id},'amadorFoot',1)"${c.counts.amadorFoot===3?' disabled':''}>+</button>
+            </div>
+          </div>
+          <div class="conj-cnt-row${c.counts.amadorHorse>0?' active':''}" id="row-${c.id}-amadorHorse">
+            <span class="conj-cnt-label"><span class="badge badge-amador">Amador</span>&nbsp;Horseback</span>
+            <div class="conj-cnt-ctrl">
+              <button class="reg-cbtn" id="btn-${c.id}-amadorHorse-m" onclick="chgConj(${c.id},'amadorHorse',-1)"${c.counts.amadorHorse===0?' disabled':''}>−</button>
+              <span class="conj-cnt-num" id="cnt-${c.id}-amadorHorse">${c.counts.amadorHorse}</span>
+              <button class="reg-cbtn" id="btn-${c.id}-amadorHorse-p" onclick="chgConj(${c.id},'amadorHorse',1)"${c.counts.amadorHorse===3?' disabled':''}>+</button>
+            </div>
+          </div>`;
+        return `
+        <div class="conj-card" id="conj-${c.id}">
+          <div class="conj-head">
+            <span class="conj-num">Conjunto ${i + 1}</span>
+            <button class="conj-remove" onclick="removeConjunto(${c.id})" style="display:${multi ? 'flex' : 'none'}" aria-label="Remover">×</button>
+          </div>
+          <div class="reg-row">
+            <div class="reg-field">
+              <label class="reg-label">Nome do Cão *</label>
+              <input type="text" class="reg-input" placeholder="Nome do cão" value="${esc(c.nomeCao)}" oninput="updateConjunto(${c.id},'nomeCao',this.value)">
+            </div>
+            <div class="reg-field" style="flex:0 0 160px">
+              <label class="reg-label">Sexo *</label>
+              <div class="reg-radios">
+                <label class="reg-radio${c.sexo==='Macho'?' selected':''}" data-sexo="Macho" onclick="updateConjunto(${c.id},'sexo','Macho')"><input type="radio" name="sx-${c.id}" style="display:none">Macho</label>
+                <label class="reg-radio${c.sexo==='Fêmea'?' selected':''}" data-sexo="Fêmea" onclick="updateConjunto(${c.id},'sexo','Fêmea')"><input type="radio" name="sx-${c.id}" style="display:none">Fêmea</label>
+              </div>
+            </div>
+          </div>
+          <div class="reg-field" style="margin-bottom:4px"><label class="reg-label">Inscrições por categoria (0–3 cada)</label></div>
+          <div class="conj-counters">
+            ${amadorRows}
+            <div class="conj-cnt-row${c.counts.proFoot>0?' active':''}" id="row-${c.id}-proFoot">
+              <span class="conj-cnt-label"><span class="badge badge-pro">Pro</span>&nbsp;One Foot</span>
+              <div class="conj-cnt-ctrl">
+                <button class="reg-cbtn" id="btn-${c.id}-proFoot-m" onclick="chgConj(${c.id},'proFoot',-1)"${c.counts.proFoot===0?' disabled':''}>−</button>
+                <span class="conj-cnt-num" id="cnt-${c.id}-proFoot">${c.counts.proFoot}</span>
+                <button class="reg-cbtn" id="btn-${c.id}-proFoot-p" onclick="chgConj(${c.id},'proFoot',1)"${c.counts.proFoot===3?' disabled':''}>+</button>
+              </div>
+            </div>
+            <div class="conj-cnt-row${c.counts.proHorse>0?' active':''}" id="row-${c.id}-proHorse">
+              <span class="conj-cnt-label"><span class="badge badge-pro">Pro</span>&nbsp;Horseback</span>
+              <div class="conj-cnt-ctrl">
+                <button class="reg-cbtn" id="btn-${c.id}-proHorse-m" onclick="chgConj(${c.id},'proHorse',-1)"${c.counts.proHorse===0?' disabled':''}>−</button>
+                <span class="conj-cnt-num" id="cnt-${c.id}-proHorse">${c.counts.proHorse}</span>
+                <button class="reg-cbtn" id="btn-${c.id}-proHorse-p" onclick="chgConj(${c.id},'proHorse',1)"${c.counts.proHorse===3?' disabled':''}>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="conj-subtotal" id="sub-${c.id}">${sub > 0 ? sub + ' inscrição' + (sub>1?'ões':'') : ''}</div>
+        </div>`;
+      }).join('');
+      updPriceConjuntos();
+    }
+    function esc(s) { return s.replace(/"/g, '&quot;'); }
+
+    function calcTotalPrice(n) {
+      if (n <= 0) return 0;
+      if (n === 1) return 400;
+      if (n === 2) return 750;
+      if (n <= 6)  return n * 333;
+      return 1998 + (n - 6) * 300;
+    }
+    function calcBreakdown(n) {
+      if (n <= 0) return '';
+      if (n === 1) return '1 inscrição: R$ 400';
+      if (n === 2) return '2 inscrições: R$ 750';
+      if (n <= 6)  return `${n} inscrições × R$ 333 = ${fmtP(n * 333)}`;
+      const ex = n - 6;
+      return `6 inscrições = R$ 1.998 + ${ex} inscrição${ex>1?'ões':''} extra${ex>1?'s':''} × R$ 300 = ${fmtP(calcTotalPrice(n))}`;
+    }
+    function fmtP(p)      { return 'R$ ' + p.toLocaleString('pt-BR'); }
+    function totalCount() { return RS.conjuntos.reduce((a,c) => a + c.counts.amadorFoot + c.counts.amadorHorse + c.counts.proFoot + c.counts.proHorse, 0); }
+    function calcTotalVal(){ return RS.conjuntos.reduce((a,c) => a, 0) || calcTotalPrice(totalCount()); }
+
+    function updPriceConjuntos() {
+      const n     = totalCount();
+      const total = calcTotalPrice(n);
+      const el    = document.getElementById('regPrice');
+      if (n === 0) { el.style.display = 'none'; return; }
+      el.style.display = 'flex';
+      document.getElementById('priceTotal').textContent = n;
+      document.getElementById('priceVal').textContent   = fmtP(total);
+      document.getElementById('priceBreak').textContent = calcBreakdown(n);
+      const unlock = document.getElementById('priceUnlock');
+      if (unlock) unlock.style.display = n >= 7 ? 'flex' : 'none';
+    }
+
+    function buildSummary() {
+      const name  = v('fName'), shirt = document.getElementById('fShirt').value;
+      const wp    = v('fWp'), city = v('fCity'), st = document.getElementById('fState').value;
+      const n = totalCount(), total = calcTotalPrice(n);
+      const conjHTML = RS.conjuntos.map((c, i) => {
+        const isPro = RS.tipoCompetidor === 'profissional';
+        const cats = [
+          ...(!isPro && c.counts.amadorFoot  > 0 ? [`Amador One Foot: ${c.counts.amadorFoot}`]  : []),
+          ...(!isPro && c.counts.amadorHorse > 0 ? [`Amador Horseback: ${c.counts.amadorHorse}`]: []),
+          ...(c.counts.proFoot  > 0 ? [`Pro One Foot: ${c.counts.proFoot}`]  : []),
+          ...(c.counts.proHorse > 0 ? [`Pro Horseback: ${c.counts.proHorse}`] : []),
+        ];
+        const sub = Object.values(c.counts).reduce((a,b)=>a+b,0);
+        return `<div class="reg-sum-row"><span class="reg-sum-k">Conj. ${i+1}</span><span class="reg-sum-v">${c.nomeCao} · ${c.sexo}<br><span style="font-weight:400;color:var(--color-fg-muted);font-size:0.82rem">${cats.join(' · ')}</span><span style="color:var(--color-accent)"> · ${sub}×</span></span></div>`;
+      }).join('');
+      document.getElementById('regSummary').innerHTML = `
+        <div class="reg-sum-head">
+          <span class="reg-sum-head-name">★ ${name}</span>
+          <span class="reg-sum-head-etapa">Etapa 1 · Uberlândia-MG · Jun/2026</span>
+        </div>
+        <div class="reg-sum-body">
+          <div class="reg-sum-block">
+            <h4>Competidor</h4>
+            <div class="reg-sum-row"><span class="reg-sum-k">Nome</span><span class="reg-sum-v">${name}</span></div>
+            <div class="reg-sum-row"><span class="reg-sum-k">Categoria</span><span class="reg-sum-v" style="text-transform:capitalize">${RS.tipoCompetidor}</span></div>
+            <div class="reg-sum-row"><span class="reg-sum-k">Camisa</span><span class="reg-sum-v">${shirt}</span></div>
+            <div class="reg-sum-row"><span class="reg-sum-k">WhatsApp</span><span class="reg-sum-v">${wp}</span></div>
+            <div class="reg-sum-row"><span class="reg-sum-k">Cidade / UF</span><span class="reg-sum-v">${city} — ${st}</span></div>
+          </div>
+          <div class="reg-sum-block"><h4>Conjuntos inscritos</h4>${conjHTML}</div>
+          <div class="reg-sum-total">
+            <div>
+              <div class="reg-sum-total-lbl">Total de inscrições</div>
+              <div class="reg-sum-total-cnt">${n} inscrição${n>1?'ões':''}</div>
+              <div class="reg-sum-total-sub">${calcBreakdown(n)}</div>
+            </div>
+            <div class="reg-sum-total-val">${fmtP(total)}</div>
+          </div>
+        </div>`;
+    }
+
+    async function finalizar() {
+      const errs = [];
+      if (!v('fName'))  errs.push('Nome do competidor é obrigatório.');
+      if (!document.getElementById('fShirt').value) errs.push('Tamanho da camisa é obrigatório.');
+      if (!v('fWp'))   errs.push('WhatsApp é obrigatório.');
+      if (!v('fCity')) errs.push('Cidade é obrigatória.');
+      if (!document.getElementById('fState').value) errs.push('Estado é obrigatório.');
+      if (RS.conjuntos.length === 0) errs.push('Adicione pelo menos um conjunto.');
+      RS.conjuntos.forEach((c, i) => {
+        if (!c.nomeCao.trim()) errs.push(`Conjunto ${i+1}: informe o nome do cão.`);
+        if (!c.sexo)           errs.push(`Conjunto ${i+1}: selecione o sexo.`);
+        const sub = Object.values(c.counts).reduce((a,b)=>a+b,0);
+        if (sub === 0)         errs.push(`Conjunto ${i+1}: adicione pelo menos 1 inscrição.`);
+      });
+      showErr('err-4', errs);
+      if (errs.length) { document.getElementById('err-4').scrollIntoView({behavior:'smooth',block:'center'}); return; }
+
+      const n = totalCount(), total = calcTotalPrice(n);
+      const payload = {
+        nome: v('fName'), camisa: document.getElementById('fShirt').value,
+        whatsapp: v('fWp'), cidade: v('fCity'), estado: document.getElementById('fState').value,
+        tipoCompetidor: RS.tipoCompetidor, etapa: 'Etapa 1',
+        conjuntos: RS.conjuntos.map(c => ({
+          nomeCao: c.nomeCao, sexo: c.sexo,
+          amadorFoot: c.counts.amadorFoot, amadorHorse: c.counts.amadorHorse,
+          proFoot: c.counts.proFoot, proHorse: c.counts.proHorse,
+          totalConjunto: Object.values(c.counts).reduce((a,b)=>a+b,0)
+        })),
+        totalInscricoes: n, valorTotal: total
+      };
+
+      const btn = document.getElementById('finBtn');
+      btn.disabled = true; btn.textContent = 'Registrando inscrição...';
+
+      if (window.location.protocol === 'file:') {
+        showErr('err-4', ['Use o Live Server no VS Code para testar. Em produção funciona normalmente.']);
+        btn.disabled = false; btn.textContent = 'Finalizar Inscrição'; return;
+      }
+
+      try {
+        const resp = await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) });
+        let result;
+        try { result = JSON.parse(await resp.text()); } catch { throw new Error('Resposta inválida do servidor.'); }
+        if (!result.success) throw new Error(result.error || 'Erro ao registrar inscrição.');
+
+        const inscricaoId = result.data.id;
+        document.getElementById('panel4Content').style.display = 'none';
+        document.getElementById('successState').style.display  = 'block';
+        document.getElementById('successId').textContent       = inscricaoId;
+        document.getElementById('regForm').scrollIntoView({behavior:'smooth',block:'start'});
+
+        setTimeout(() => {
+          const isPro   = RS.tipoCompetidor === 'profissional';
+          const conjMsg = RS.conjuntos.map(c => {
+            const cats = [
+              ...(!isPro && c.counts.amadorFoot  > 0 ? [`Amador One Foot: ${c.counts.amadorFoot}`]  : []),
+              ...(!isPro && c.counts.amadorHorse > 0 ? [`Amador Horseback: ${c.counts.amadorHorse}`]: []),
+              ...(c.counts.proFoot  > 0 ? [`Pro One Foot: ${c.counts.proFoot}`]  : []),
+              ...(c.counts.proHorse > 0 ? [`Pro Horseback: ${c.counts.proHorse}`] : []),
+            ];
+            return `• ${c.nomeCao} (${c.sexo})\n  ${cats.join(' · ')}`;
+          }).join('\n');
+          const msg =
+`Olá equipe Pro Had! 🐕
+
+Minha inscrição foi registrada.
+
+*ID: ${inscricaoId}*
+
+Competidor: ${payload.nome}
+Categoria: ${RS.tipoCompetidor.charAt(0).toUpperCase()+RS.tipoCompetidor.slice(1)}
+Etapa 1 · Uberlândia-MG
+
+*CONJUNTOS*
+${conjMsg}
+
+*CÁLCULO*
+${calcBreakdown(n)}
+
+*TOTAL: ${n} inscrição(ões) · ${fmtP(total)}*
+
+Aguardando instruções para pagamento. 🤝`;
+          window.open('https://wa.me/5533999442876?text=' + encodeURIComponent(msg), '_blank');
+          document.getElementById('successStatusText').textContent = 'WhatsApp aberto! Se não abriu, ';
+          const link = document.createElement('a');
+          link.href = 'https://wa.me/5533999442876?text=' + encodeURIComponent(msg);
+          link.target = '_blank'; link.textContent = 'clique aqui.';
+          link.style.cssText = 'color:var(--color-accent);text-decoration:underline;';
+          document.getElementById('successStatusText').appendChild(link);
+        }, 2000);
+      } catch (err) {
+        showErr('err-4', ['Não foi possível registrar sua inscrição. Detalhe: ' + err.message]);
+        document.getElementById('err-4').scrollIntoView({behavior:'smooth',block:'center'});
+        btn.disabled = false; btn.textContent = 'Finalizar Inscrição';
+      }
+    }
+
+    // Inicia com 1 conjunto ao carregar
+    addConjunto();
+
+    (function() {
+      var targets = document.querySelectorAll('.mod-animate');
+      if (!targets.length) return;
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      targets.forEach(function(el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
