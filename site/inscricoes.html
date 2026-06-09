@@ -803,6 +803,7 @@
     function goStep(n) {
       const fwd = n > RS.step;
       if (fwd && !validate(RS.step)) return;
+      if (document.activeElement) document.activeElement.blur();
       document.getElementById(`panel-${RS.step}`).classList.remove('active');
       RS.step = n;
       document.getElementById(`panel-${n}`).classList.add('active');
@@ -1100,6 +1101,7 @@
         conjuntos:       RS.conjuntos.map(c => ({
           nomeCao:       c.nomeCao,
           sexo:          c.sexo,
+          categoria:     RS.tipoCompetidor,
           amadorFoot:    c.counts.amadorFoot,
           amadorHorse:   c.counts.amadorHorse,
           proFoot:       c.counts.proFoot,

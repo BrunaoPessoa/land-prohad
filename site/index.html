@@ -1591,6 +1591,7 @@
     function goStep(n) {
       const fwd = n > RS.step;
       if (fwd && !validate(RS.step)) return;
+      if (document.activeElement) document.activeElement.blur();
       document.getElementById(`panel-${RS.step}`).classList.remove('active');
       RS.step = n;
       document.getElementById(`panel-${n}`).classList.add('active');
