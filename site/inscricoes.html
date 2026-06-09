@@ -513,30 +513,36 @@
     }
 
     /* ── Formulário mobile ─────────────────────────────────────
-       Causa raiz do overflow: paddings aninhados somam 70px/lado
-       reg-panel(32) + conj-card(24) + conj-cnt-row(14) = 70px
-       Num celular de 360px sobram ~180px — menos que os controles
+       Solução: empilha label + controles em coluna no mobile.
+       Elimina qualquer problema de cálculo de largura.
     ─────────────────────────────────────────────────────────── */
-    @media (max-width: 520px) {
-      /* Painel: reduz padding horizontal (maior ganho) */
+    @media (max-width: 600px) {
+      /* Painel e card com menos padding lateral */
       .reg-panel { padding: 20px 12px; }
+      .conj-card  { padding: 16px 12px; }
 
-      /* Card do conjunto */
-      .conj-card { padding: 16px 12px; }
-
-      /* Labels: reduz letter-spacing para textos longos */
+      /* Labels: menos letter-spacing */
       .reg-label { letter-spacing: 0.04em; }
 
-      /* Linha de categoria */
-      .conj-cnt-row   { padding: 8px 10px; gap: 6px; }
-      .conj-cnt-label { gap: 6px; font-size: 0.82rem; }
-      .conj-cnt-num   { min-width: 34px; font-size: 1.5rem; }
-
-      /* Badge menor dentro da linha */
-      .conj-cnt-label .badge { font-size: 0.58rem; padding: 2px 7px; }
-
-      /* Botões +/- menores */
-      .reg-cbtn { width: 36px; height: 36px; font-size: 1.2rem; }
+      /* Linha de categoria: label em cima, controles embaixo */
+      .conj-cnt-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px;
+      }
+      .conj-cnt-label {
+        font-size: 0.85rem;
+        gap: 8px;
+        width: 100%;
+      }
+      /* Controles centralizados na linha inteira */
+      .conj-cnt-ctrl {
+        width: 100%;
+        justify-content: center;
+      }
+      .conj-cnt-num { min-width: 52px; font-size: 2rem; }
+      .reg-cbtn     { width: 44px; height: 44px; font-size: 1.4rem; }
     }
   </style>
 </head>
