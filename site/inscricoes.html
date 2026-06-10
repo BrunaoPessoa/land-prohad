@@ -414,7 +414,7 @@
     .conj-card {
       background: var(--color-bg-dark); border: 1px solid var(--color-border);
       border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px;
-      animation: regIn 0.25s ease;
+      animation: regIn 0.25s ease; overflow: hidden;
     }
     .conj-head {
       display: flex; align-items: center; justify-content: space-between;
@@ -443,7 +443,7 @@
     }
     .conj-cnt-row.active { border-color: rgba(153,68,52,0.4); }
     .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--color-fg-muted); flex: 1; }
-    .conj-cnt-ctrl  { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
+    .conj-cnt-ctrl  { display: flex; align-items: center; gap: 0; }
     .conj-cnt-num   { min-width: 40px; text-align: center; font-family: var(--font-display); font-size: 1.8rem; color: var(--color-fg); line-height: 1; }
     .conj-subtotal  { text-align: right; font-size: 0.78rem; color: var(--color-fg-muted); min-height: 16px; margin-bottom: 4px; }
 
@@ -516,7 +516,7 @@
        Solução: empilha label + controles em coluna no mobile.
        Elimina qualquer problema de cálculo de largura.
     ─────────────────────────────────────────────────────────── */
-    @media (max-width: 600px) {
+    @media (max-width: 680px) {
       /* Painel e card com menos padding lateral */
       .reg-panel { padding: 20px 12px; }
       .conj-card  { padding: 16px 12px; }
@@ -530,6 +530,8 @@
         align-items: flex-start;
         gap: 10px;
         padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .conj-cnt-label {
         font-size: 0.85rem;
@@ -540,6 +542,7 @@
       .conj-cnt-ctrl {
         width: 100%;
         justify-content: center;
+        flex-shrink: 1;
       }
       .conj-cnt-num { min-width: 52px; font-size: 2rem; }
       .reg-cbtn     { width: 44px; height: 44px; font-size: 1.4rem; }
