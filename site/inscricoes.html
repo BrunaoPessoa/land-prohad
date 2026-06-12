@@ -412,8 +412,8 @@
 
     /* ── Conjuntos dinâmicos ─────────────────────────────── */
     .conj-card {
-      background: var(--color-bg-dark); border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px;
+      background: transparent; border: none;
+      border-radius: var(--radius-lg); padding: 0; margin-bottom: 16px;
       animation: regIn 0.25s ease; overflow: hidden;
     }
     .conj-head {
@@ -524,7 +524,7 @@
     @media (max-width: 680px) {
       /* Painel e card com menos padding lateral */
       .reg-panel { padding: 20px 12px; }
-      .conj-card  { padding: 16px 12px; }
+
 
       /* Labels: menos letter-spacing */
       .reg-label { letter-spacing: 0.04em; }
