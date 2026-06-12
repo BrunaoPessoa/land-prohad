@@ -436,15 +436,24 @@
     /* Contadores por categoria dentro de cada conjunto */
     .conj-counters { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
     .conj-cnt-row {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 12px; padding: 10px 14px;
+      display: flex; flex-direction: column;
+      gap: 10px; padding: 12px;
       background: var(--color-bg-subtle); border-radius: var(--radius);
       border: 1px solid var(--color-border); transition: border-color 0.15s;
+      box-sizing: border-box; width: 100%;
     }
     .conj-cnt-row.active { border-color: rgba(153,68,52,0.4); }
-    .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--color-fg-muted); flex: 1; }
-    .conj-cnt-ctrl  { display: flex; align-items: center; gap: 0; }
-    .conj-cnt-num   { min-width: 40px; text-align: center; font-family: var(--font-display); font-size: 1.8rem; color: var(--color-fg); line-height: 1; }
+    .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--color-fg-muted); width: 100%; }
+    .conj-cnt-ctrl  {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      width: 100%; gap: 4px;
+    }
+    .conj-cnt-ctrl .reg-cbtn { width: 100%; height: 52px; font-size: 1.4rem; }
+    .conj-cnt-num   {
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 2rem;
+      color: var(--color-fg); line-height: 1; height: 52px;
+    }
     .conj-subtotal  { text-align: right; font-size: 0.78rem; color: var(--color-fg-muted); min-height: 16px; margin-bottom: 4px; }
 
     .conj-add-btn {
@@ -516,6 +525,20 @@
        Solução: empilha label + controles em coluna no mobile.
        Elimina qualquer problema de cálculo de largura.
     ─────────────────────────────────────────────────────────── */
+    @media (min-width: 768px) {
+      .conj-cnt-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 14px;
+      }
+      .conj-cnt-label { flex: 1; width: auto; }
+      .conj-cnt-ctrl  { display: flex; align-items: center; width: auto; gap: 0; flex-shrink: 0; }
+      .conj-cnt-ctrl .reg-cbtn { width: 44px; height: 44px; font-size: 1.5rem; }
+      .conj-cnt-num   { min-width: 40px; height: auto; font-size: 1.8rem; }
+    }
+
     @media (max-width: 680px) {
       /* Painel e card com menos padding lateral */
       .reg-panel { padding: 20px 12px; }
@@ -524,28 +547,7 @@
       /* Labels: menos letter-spacing */
       .reg-label { letter-spacing: 0.04em; }
 
-      /* Linha de categoria: label em cima, controles embaixo */
-      .conj-cnt-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 12px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .conj-cnt-label {
-        font-size: 0.85rem;
-        gap: 8px;
-        width: 100%;
-      }
-      /* Controles centralizados na linha inteira */
-      .conj-cnt-ctrl {
-        width: 100%;
-        justify-content: center;
-        flex-shrink: 1;
-      }
-      .conj-cnt-num { min-width: 52px; font-size: 2rem; }
-      .reg-cbtn     { width: 44px; height: 44px; font-size: 1.4rem; }
+      .conj-cnt-label { font-size: 0.85rem; }
     }
   </style>
 </head>
