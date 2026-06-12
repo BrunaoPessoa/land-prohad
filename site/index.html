@@ -868,7 +868,7 @@
 
     /* Panels */
     .reg-panel { display: none; background: var(--color-bg-subtle); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px; animation: regIn 0.28s ease; }
-    .reg-panel.active { display: block; }
+    .reg-panel.active { display: block; padding: 12px; }
     @keyframes regIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
     .reg-panel-header { margin-bottom: 28px; }
     .reg-panel-header h3 { font-family: var(--font-display); font-size: 2rem; color: var(--color-fg); margin-bottom: 6px; }
@@ -909,7 +909,7 @@
     .reg-cbtn:disabled { opacity: 0.25; cursor: not-allowed; }
 
     /* Cards de conjunto */
-    .conj-card { background: var(--color-bg-dark); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px; animation: regIn 0.25s ease; }
+    .conj-card { background: transparent; border: none; border-radius: var(--radius-lg); padding: 0; margin-bottom: 16px; animation: regIn 0.25s ease; }
     .conj-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
     .conj-num  { font-family: var(--font-display); font-size: 1.1rem; color: var(--color-accent); letter-spacing: 0.04em; }
     .conj-remove {
@@ -922,15 +922,17 @@
     .conj-remove:hover { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.12); }
     .conj-counters { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
     .conj-cnt-row {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 12px; padding: 10px 14px;
+      display: flex; flex-direction: column;
+      gap: 8px; padding: 12px;
       background: var(--color-bg-subtle); border-radius: var(--radius);
       border: 1px solid var(--color-border); transition: border-color 0.15s;
+      overflow: hidden;
     }
     .conj-cnt-row.active { border-color: rgba(153,68,52,0.4); }
-    .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--color-fg-muted); flex: 1; }
-    .conj-cnt-ctrl  { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
-    .conj-cnt-num   { min-width: 40px; text-align: center; font-family: var(--font-display); font-size: 1.8rem; color: var(--color-fg); line-height: 1; }
+    .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.72rem; color: var(--color-fg-muted); }
+    .conj-cnt-ctrl  { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; min-width: 0; }
+    .conj-cnt-ctrl .reg-cbtn { width: 100%; height: 52px; font-size: 1.4rem; min-width: 0; }
+    .conj-cnt-num   { display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 2rem; color: var(--color-fg); line-height: 1; height: 52px; min-width: 0; }
     .conj-subtotal  { text-align: right; font-size: 0.78rem; color: var(--color-fg-muted); min-height: 16px; margin-bottom: 4px; }
     .conj-add-btn {
       display: flex; align-items: center; justify-content: center; gap: 8px;
