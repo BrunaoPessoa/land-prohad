@@ -3,51 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscrições — Circuito Pro Had 2026 | Etapa 1 Uberlândia-MG</title>
-  <meta name="description" content="Inscreva seu conjunto no Circuito Pro Had 2026. Etapa 1: 27 e 28 de Junho em Uberlândia-MG. R$40.000 em premiação. One Foot e Horseback.">
+  <title>Inscrições — Circuito Pro Had | Etapa II Engenheiro Coelho-SP</title>
+  <meta name="description" content="Inscreva seu conjunto no Circuito Pro Had. Etapa II: 16 e 17 de Janeiro em Engenheiro Coelho-SP. Mais de R$ 40 mil em premiação. One Foot e Horseback.">
   <meta property="og:title" content="Inscrições — Circuito Pro Had 2026">
-  <meta property="og:description" content="Etapa 1: 27 e 28 de Junho em Uberlândia-MG. R$40.000 em premiação.">
-  <meta property="og:image" content="assets/prohad1.png">
+  <meta property="og:description" content="Etapa II: 16 e 17 de Janeiro em Engenheiro Coelho-SP. Mais de R$ 40 mil em premiação.">
+  <meta property="og:image" content="https://prohad.net/assets/og-etapa2.jpg">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     /* ============================================================
-       TOKENS — PRO HAD 2026
+       TOKENS — PRO HAD · IDENTIDADE ETAPA II
     ============================================================ */
     :root {
-      --color-primary:        #994434;
-      --color-primary-hover:  #7A3228;
-      --color-primary-active: #B05040;
-      --color-accent:         #D2AE6D;
-      --color-accent-hover:   #B89050;
-      --color-secondary:      #CB7246;
+      --color-primary:        #CF3B2B;
+      --color-primary-hover:  #B53223;
+      --color-primary-active: #E04434;
+      --color-accent:         #F4DFB4;
+      --color-accent-hover:   #E6CC94;
+      --color-secondary:      #F29A3B;
 
-      --color-bg-dark:   #0D0807;
-      --color-bg-mid:    #1A1108;
-      --color-bg-subtle: #261A10;
+      --color-bg-dark:   #120A06;
+      --color-bg-mid:    #1E120A;
+      --color-bg-subtle: #2A1A10;
 
       --color-surface:    #FFFFFF;
-      --color-border:     #3D2E1E;
-      --color-border-accent: rgba(210, 174, 109, 0.2);
+      --color-border:     #3F2A1C;
+      --color-border-accent: rgba(244, 223, 180, 0.2);
 
       --color-fg:          #FFFFFF;
-      --color-fg-muted:    #A89070;
-      --color-fg-accent:   #D2AE6D;
+      --color-fg-muted:    #B8A080;
+      --color-fg-accent:   #F4DFB4;
       --color-fg-on-primary: #FFFFFF;
+      --color-red-bright:    #EE4B3A;
 
       --color-category-amador: #2E7D32;
       --color-category-pro:    #6A1B9A;
 
-      --font-display: "Bebas Neue", "Oswald", sans-serif;
-      --font-primary:  "Nunito Sans", "DM Sans", sans-serif;
+      --font-display: "Passion One", "Bebas Neue", sans-serif;
+      --font-primary:  "Montserrat", "Nunito Sans", sans-serif;
 
       --radius:    6px;
       --radius-sm: 4px;
       --radius-lg: 12px;
       --max-width: 1280px;
     }
+    /* Etapa II: Passion One tem minúsculas; o layout foi desenhado em caixa alta */
+    .nav-drawer a,
+    .section-header h2,
+    .reg-prog-pct,
+    .reg-panel-header h3,
+    .reg-cc-mod,
+    .reg-cnum,
+    .reg-price-big,
+    .reg-sum-head-name,
+    .reg-sum-cat-q,
+    .reg-sum-total-cnt,
+    .reg-sum-total-val,
+    .reg-success h3,
+    .reg-success-id,
+    .conj-num,
+    .conj-cnt-num,
+    .conj-cnum,
+    .conj-price-tag { text-transform: uppercase; }
+
 
     /* ============================================================
        RESET
@@ -163,12 +183,12 @@
     .nav-logo { height: 34px; width: auto; }
 
     .nav-links {
-      display: none; gap: 32px;
+      display: none; gap: 24px;
     }
     @media (min-width: 1024px) { .nav-links { display: flex; } }
     .nav-links a {
-      font-size: 0.78rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.09em;
+      font-size: 0.74rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
       color: var(--color-fg-muted);
       transition: color 0.2s;
     }
@@ -221,7 +241,7 @@
     .section-header .label {
       display: block; font-size: 0.72rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: 0.14em;
-      color: var(--color-primary); margin-bottom: 12px;
+      color: var(--color-red-bright); margin-bottom: 12px;
     }
     .section-header h2 {
       font-family: var(--font-display);
@@ -297,7 +317,7 @@
       color: var(--color-fg); font-family: var(--font-primary); font-size: 0.95rem;
       width: 100%; transition: border-color 0.2s;
     }
-    .reg-input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(210,174,109,0.08); }
+    .reg-input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(244, 223, 180,0.08); }
     .reg-input::placeholder { color: var(--color-fg-muted); opacity: 0.45; }
     select.reg-input option { background: var(--color-bg-dark); }
 
@@ -305,7 +325,7 @@
     .reg-radios { display: flex; gap: 10px; }
     .reg-radio  { display: flex; align-items: center; justify-content: center; gap: 8px; flex: 1; cursor: pointer; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-size: 0.9rem; font-weight: 600; color: var(--color-fg-muted); background: var(--color-bg-dark); transition: all 0.2s; }
     .reg-radio input { display: none; }
-    .reg-radio.selected { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.1); }
+    .reg-radio.selected { border-color: var(--color-primary); color: var(--color-fg); background: rgba(207, 59, 43,0.1); }
     .reg-radio:hover { border-color: var(--color-fg-muted); }
 
     /* Counter cards */
@@ -316,7 +336,7 @@
       border-radius: var(--radius-lg); padding: 20px;
       display: flex; flex-direction: column; gap: 10px; transition: border-color 0.2s;
     }
-    .reg-cc.active { border-color: rgba(153,68,52,0.5); }
+    .reg-cc.active { border-color: rgba(207, 59, 43,0.5); }
     .reg-cc-top    { display: flex; align-items: center; justify-content: space-between; }
     .reg-cc-mod    { font-family: var(--font-display); font-size: 1.1rem; color: var(--color-accent); letter-spacing: 0.04em; }
     .reg-cc-desc   { font-size: 0.78rem; color: var(--color-fg-muted); }
@@ -334,7 +354,7 @@
 
     /* Price display */
     .reg-price {
-      background: var(--color-bg-dark); border: 1px solid rgba(210,174,109,0.25);
+      background: var(--color-bg-dark); border: 1px solid rgba(244, 223, 180,0.25);
       border-radius: var(--radius-lg); padding: 20px 24px;
       display: flex; align-items: center; flex-wrap: wrap; gap: 16px 40px;
     }
@@ -351,7 +371,7 @@
     .reg-sum-head-name  { font-family: var(--font-display); font-size: 1.3rem; color: #fff; }
     .reg-sum-head-etapa { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.65); }
     .reg-sum-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; }
-    .reg-sum-block h4 { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-primary); margin-bottom: 10px; }
+    .reg-sum-block h4 { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-red-bright); margin-bottom: 10px; }
     .reg-sum-row { display: flex; gap: 8px; font-size: 0.88rem; padding: 7px 0; border-bottom: 1px solid var(--color-border); }
     .reg-sum-row:last-child { border-bottom: none; }
     .reg-sum-k { color: var(--color-fg-muted); flex: 0 0 110px; }
@@ -361,7 +381,7 @@
     .reg-sum-cat-n { color: var(--color-fg-muted); }
     .reg-sum-cat-q { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-accent); }
     .reg-sum-cat.zero .reg-sum-cat-q { color: var(--color-border); }
-    .reg-sum-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: rgba(210,174,109,0.05); border: 1px solid rgba(210,174,109,0.18); border-radius: var(--radius); }
+    .reg-sum-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: rgba(244, 223, 180,0.05); border: 1px solid rgba(244, 223, 180,0.18); border-radius: var(--radius); }
     .reg-sum-total-lbl { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-fg-muted); margin-bottom: 4px; }
     .reg-sum-total-cnt { font-family: var(--font-display); font-size: 1.4rem; color: var(--color-fg); }
     .reg-sum-total-sub { font-size: 0.75rem; color: var(--color-fg-muted); margin-top: 4px; }
@@ -369,7 +389,7 @@
 
     /* Nav + errors */
     .reg-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--color-border); }
-    .reg-errors { background: rgba(153,68,52,0.1); border: 1px solid rgba(153,68,52,0.3); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
+    .reg-errors { background: rgba(207, 59, 43,0.1); border: 1px solid rgba(207, 59, 43,0.3); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
     .reg-errors p { font-size: 0.86rem; color: #EF9A9A; margin-bottom: 4px; }
     .reg-errors p:last-child { margin-bottom: 0; }
     .reg-errors p::before { content: "⚠ "; }
@@ -397,7 +417,7 @@
     }
     .reg-success-id {
       font-family: var(--font-display); font-size: 2rem; color: var(--color-accent);
-      background: rgba(210,174,109,0.07); border: 1px solid rgba(210,174,109,0.25);
+      background: rgba(244, 223, 180,0.07); border: 1px solid rgba(244, 223, 180,0.25);
       border-radius: var(--radius-lg); padding: 16px 32px; margin-bottom: 12px;
       letter-spacing: 0.06em; display: inline-block;
     }
@@ -432,7 +452,7 @@
       cursor: pointer; display: flex; align-items: center; justify-content: center;
       font-family: var(--font-primary); transition: all 0.15s;
     }
-    .conj-remove:hover { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.12); }
+    .conj-remove:hover { border-color: var(--color-primary); color: var(--color-fg); background: rgba(207, 59, 43,0.12); }
 
     /* Contadores por categoria dentro de cada conjunto */
     .conj-counters { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
@@ -443,7 +463,7 @@
       border: 1px solid var(--color-border); transition: border-color 0.15s;
       overflow: hidden;
     }
-    .conj-cnt-row.active { border-color: rgba(153,68,52,0.4); }
+    .conj-cnt-row.active { border-color: rgba(207, 59, 43,0.4); }
     .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.72rem; color: var(--color-fg-muted); }
     .conj-cnt-ctrl  {
       display: grid; grid-template-columns: 1fr 1fr 1fr;
@@ -477,7 +497,7 @@
     .reg-unlock {
       width: 100%; display: flex; align-items: center; gap: 10px;
       padding: 12px 16px; margin-top: 12px;
-      background: rgba(210,174,109,0.08); border: 1px solid rgba(210,174,109,0.3);
+      background: rgba(244, 223, 180,0.08); border: 1px solid rgba(244, 223, 180,0.3);
       border-radius: var(--radius); font-size: 0.85rem;
       color: var(--color-accent); font-weight: 700;
     }
@@ -532,6 +552,7 @@
 
     }
   </style>
+  <script src="assets/precos.js"></script>
 </head>
 <body>
 
@@ -566,7 +587,7 @@
     <a href="index.html#prizes" onclick="closeDrawer()">Premiação</a>
     <a href="index.html#sponsorship" onclick="closeDrawer()">Patrocínio</a>
     <a href="index.html#contact" onclick="closeDrawer()">Regulamento &amp; Contato</a>
-    <a href="inscricoes.html" class="btn btn-primary" onclick="closeDrawer()">Inscrever na Etapa 1</a>
+    <a href="inscricoes.html" class="btn btn-primary" onclick="closeDrawer()">Inscrever na Etapa II</a>
   </nav>
 
   <!-- CONTEÚDO PRINCIPAL -->
@@ -575,9 +596,9 @@
       <div class="container">
 
         <div class="section-header">
-          <span class="label">Inscrições — Etapa 1</span>
+          <span class="label">Inscrições — Etapa II</span>
           <h2>Inscreva seu conjunto.</h2>
-          <p>27 e 28 de Junho · Uberlândia — MG · R$ 40.000 em premiação</p>
+          <p>16 e 17 de Janeiro · Engenheiro Coelho — SP · Mais de R$ 40 mil em premiação</p>
         </div>
 
         <div class="reg-form" id="regForm">
@@ -702,7 +723,7 @@
               </div>
               <div class="reg-price-break" id="priceBreak"></div>
               <div class="reg-unlock" id="priceUnlock" style="display:none;">
-                Você desbloqueou a tarifa especial de R$ 300 por inscrição adicional!
+                Você desbloqueou a tarifa especial de <span data-preco="cadaExtra">R$ 300</span> por inscrição adicional!
               </div>
             </div>
 
@@ -802,7 +823,7 @@
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
       header.style.borderBottomColor = window.scrollY > 80
-        ? 'rgba(153,68,52,0.4)' : 'var(--color-border)';
+        ? 'rgba(207, 59, 43,0.4)' : 'var(--color-border)';
     }, { passive: true });
 
     /* ============================================================
@@ -1018,22 +1039,8 @@
     function esc(s) { return s.replace(/"/g, '&quot;'); }
 
     /* ── Preços ──────────────────────────────────────────────── */
-    function calcTotalPrice(n) {
-      if (n <= 0) return 0;
-      if (n === 1) return 400;
-      if (n === 2) return 750;
-      if (n <= 6)  return n * 333;
-      return 1998 + (n - 6) * 300;
-    }
-
-    function calcBreakdown(n) {
-      if (n <= 0) return '';
-      if (n === 1) return '1 inscrição: R$ 400';
-      if (n === 2) return '2 inscrições: R$ 750';
-      if (n <= 6)  return `${n} inscrições × R$ 333 = ${fmtP(n * 333)}`;
-      const ex = n - 6;
-      return `6 inscrições = R$ 1.998 + ${ex} inscrição${ex > 1 ? 'ões' : ''} extra${ex > 1 ? 's' : ''} × R$ 300 = ${fmtP(calcTotalPrice(n))}`;
-    }
+    function calcTotalPrice(n) { return PROHAD_PRECO.total(n); }
+    function calcBreakdown(n)  { return PROHAD_PRECO.calculo(n); }
 
     function fmtP(p)      { return 'R$ ' + p.toLocaleString('pt-BR'); }
     function totalCount() {
@@ -1051,7 +1058,7 @@
       document.getElementById('priceVal').textContent   = fmtP(total);
       document.getElementById('priceBreak').textContent = calcBreakdown(n);
       const unlock = document.getElementById('priceUnlock');
-      if (unlock) unlock.style.display = n >= 7 ? 'flex' : 'none';
+      if (unlock) { const L = PROHAD_PRECO.loteAtual(); unlock.style.display = n >= 7 && L.cadaExtra < L.cadaAteSeis ? 'flex' : 'none'; }
     }
 
     /* ── Resumo ──────────────────────────────────────────────── */
@@ -1082,7 +1089,7 @@
       document.getElementById('regSummary').innerHTML = `
         <div class="reg-sum-head">
           <span class="reg-sum-head-name">★ ${name}</span>
-          <span class="reg-sum-head-etapa">Etapa 1 · Uberlândia-MG · Jun/2026</span>
+          <span class="reg-sum-head-etapa">Etapa II · Engenheiro Coelho-SP · Jan/2027</span>
         </div>
         <div class="reg-sum-body">
           <div class="reg-sum-block">
@@ -1137,7 +1144,7 @@
         cidade:          v('fCity'),
         estado:          document.getElementById('fState').value,
         tipoCompetidor:  RS.tipoCompetidor,
-        etapa:           'Etapa 1',
+        etapa:           'Etapa II',
         conjuntos:       RS.conjuntos.map(c => ({
           nomeCao:       c.nomeCao,
           sexo:          c.sexo,
@@ -1149,7 +1156,8 @@
           totalConjunto: Object.values(c.counts).reduce((a,b) => a+b, 0)
         })),
         totalInscricoes: n,
-        valorTotal:      total
+        valorTotal:      total,
+        lote:            PROHAD_PRECO.loteAtual().nome
       };
 
       const btn = document.getElementById('finBtn');
@@ -1171,6 +1179,8 @@
         if (!result.success) throw new Error(result.error || 'Erro ao registrar inscrição.');
 
         const inscricaoId = result.data.id;
+        const totalFinal  = result.data.valorTotal != null ? result.data.valorTotal : total;
+        const calcFinal   = result.data.calculo || '';
         document.getElementById('panel4Content').style.display = 'none';
         document.getElementById('successState').style.display  = 'block';
         document.getElementById('successId').textContent       = inscricaoId;
@@ -1197,15 +1207,15 @@ Minha inscrição foi registrada.
 
 Competidor: ${payload.nome}
 Categoria: ${RS.tipoCompetidor.charAt(0).toUpperCase() + RS.tipoCompetidor.slice(1)}
-Etapa 1 · Uberlândia-MG
+Etapa II · Engenheiro Coelho-SP · 16 e 17/01
 
 *CONJUNTOS*
 ${conjMsg}
 
 *CÁLCULO*
-${calcBreakdown(nFinal)}
+${calcFinal || calcBreakdown(nFinal)}
 
-*TOTAL: ${nFinal} inscrição(ões) · ${fmtP(total)}*
+*TOTAL: ${nFinal} inscrição(ões) · ${fmtP(totalFinal)}*
 
 Aguardando instruções para pagamento. 🤝`;
 
