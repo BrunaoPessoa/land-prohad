@@ -102,7 +102,7 @@ function doPost(e) {
         Number(c.proHorse)      || 0,
         Number(c.totalConjunto) || 0,
         'R$ ' + Number(dados.valorTotal).toLocaleString('pt-BR'),
-        dados.etapa || 'Etapa 1',
+        dados.etapa || 'Etapa II',
         '',
         agora,
         ''

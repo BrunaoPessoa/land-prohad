@@ -3,54 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscrições Abertas — Etapa 1 · Circuito Pro Had 2026 | Uberlândia, 27–28 Jun</title>
-  <meta name="description" content="Etapa 1 do Circuito Pro Had 2026: 27 e 28 de Junho em Uberlândia–MG. R$ 40.000 em premiação. Competição profissional de pastoreio com cães — modalidades One Foot e Horseback. Inscreva seu conjunto agora.">
-  <meta name="keywords" content="pastoreio com cães, circuito pastoreio, Pro Had 2026, border collie, One Foot, Horseback, bovinos, competição cães, Uberlândia">
+  <title>Inscrições Abertas — Etapa II · Circuito Pro Had | Engenheiro Coelho-SP, 16 e 17 Jan</title>
+  <meta name="description" content="Etapa II do Circuito Pro Had: 16 e 17 de Janeiro em Engenheiro Coelho–SP. Mais de R$ 40 mil em premiação. Competição profissional de pastoreio com cães — modalidades One Foot e Horseback. Inscreva seu conjunto agora.">
+  <meta name="keywords" content="pastoreio com cães, circuito pastoreio, Pro Had 2026, border collie, One Foot, Horseback, bovinos, competição cães, Engenheiro Coelho, São Paulo, Etapa II">
   <meta property="og:title" content="Circuito Pro Had 2026 — Pastoreio com Cães">
-  <meta property="og:description" content="Etapa 1: 27 e 28 de Junho em Uberlândia-MG. R$40.000 em premiação. Inscrições abertas.">
-  <meta property="og:image" content="assets/prohad1.png">
+  <meta property="og:description" content="Etapa II: 16 e 17 de Janeiro em Engenheiro Coelho-SP. Mais de R$ 40 mil em premiação. Inscrições abertas.">
+  <meta property="og:image" content="https://prohad.net/assets/og-etapa2.jpg">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     /* ============================================================
-       TOKENS — PRO HAD 2026
-       Paleta oficial: Identidade Visual Pro Had.pdf
-       #994434 Vermelho | #D2AE6D Dourado | #CB7246 Terra
+       TOKENS — PRO HAD · IDENTIDADE ETAPA II
+       Paleta da Etapa II (cartaz e carrosséis)
+       #EE4B3A Vermelho | #F4DFB4 Creme | #F29A3B Âmbar | #120A06 Fundo
     ============================================================ */
     :root {
-      --color-primary:        #994434;
-      --color-primary-hover:  #7A3228;
-      --color-primary-active: #B05040;
-      --color-accent:         #D2AE6D;
-      --color-accent-hover:   #B89050;
-      --color-secondary:      #CB7246;
+      --color-primary:        #CF3B2B;
+      --color-primary-hover:  #B53223;
+      --color-primary-active: #E04434;
+      --color-accent:         #F4DFB4;
+      --color-accent-hover:   #E6CC94;
+      --color-secondary:      #F29A3B;
 
-      --color-bg-dark:   #0D0807;
-      --color-bg-mid:    #1A1108;
-      --color-bg-subtle: #261A10;
+      --color-bg-dark:   #120A06;
+      --color-bg-mid:    #1E120A;
+      --color-bg-subtle: #2A1A10;
 
       --color-surface:    #FFFFFF;
-      --color-border:     #3D2E1E;
-      --color-border-accent: rgba(210, 174, 109, 0.2);
+      --color-border:     #3F2A1C;
+      --color-border-accent: rgba(244, 223, 180, 0.2);
 
       --color-fg:          #FFFFFF;
-      --color-fg-muted:    #A89070;
-      --color-fg-accent:   #D2AE6D;
+      --color-fg-muted:    #B8A080;
+      --color-fg-accent:   #F4DFB4;
       --color-fg-on-primary: #FFFFFF;
+      --color-red-bright:    #EE4B3A;
 
       --color-category-amador: #2E7D32;
       --color-category-pro:    #6A1B9A;
 
-      --font-display: "Bebas Neue", "Oswald", sans-serif;
-      --font-primary:  "Nunito Sans", "DM Sans", sans-serif;
+      --font-display: "Passion One", "Bebas Neue", sans-serif;
+      --font-primary:  "Montserrat", "Nunito Sans", sans-serif;
 
       --radius:    6px;
       --radius-sm: 4px;
       --radius-lg: 12px;
       --max-width: 1280px;
     }
+    /* Etapa II: Passion One tem minúsculas; o layout foi desenhado em caixa alta */
+    .nav-drawer a,
+    .hero-bg-text span,
+    .hero-title,
+    .hero-prize-value,
+    .hero-sp-number,
+    .section-header h2,
+    .about h2,
+    .card h3,
+    .format-num,
+    .stage-tag,
+    .inscriptions h2,
+    .step-n,
+    .price-pack-value,
+    .sponsorship h2,
+    .contact-block h3,
+    .reg-prog-pct,
+    .reg-panel-header h3,
+    .conj-num,
+    .conj-cnt-num,
+    .reg-price-big,
+    .reg-sum-head-name,
+    .reg-sum-cat-q,
+    .reg-sum-total-cnt,
+    .reg-sum-total-val { text-transform: uppercase; }
+
 
     /* ============================================================
        RESET
@@ -130,7 +157,7 @@
       color: var(--color-accent);
       border-color: var(--color-accent);
     }
-    .btn-outline:hover { background: rgba(210,174,109,0.08); }
+    .btn-outline:hover { background: rgba(244, 223, 180,0.08); }
 
     .btn-ghost {
       background: transparent;
@@ -184,12 +211,12 @@
     .nav-logo { height: 34px; width: auto; }
 
     .nav-links {
-      display: none; gap: 32px;
+      display: none; gap: 24px;
     }
     @media (min-width: 1024px) { .nav-links { display: flex; } }
     .nav-links a {
-      font-size: 0.78rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.09em;
+      font-size: 0.74rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
       color: var(--color-fg-muted);
       transition: color 0.2s;
     }
@@ -244,9 +271,8 @@
       text-align: center;
       padding: 96px 24px 80px;
       background:
-        radial-gradient(ellipse at 25% 75%, rgba(153,68,52,0.18) 0%, transparent 55%),
-        radial-gradient(ellipse at 75% 25%, rgba(203,114,70,0.10) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 50%, rgba(26,17,8,0.8) 0%, transparent 80%),
+        linear-gradient(180deg, rgba(18,10,6,0.45) 0%, rgba(18,10,6,0.70) 40%, rgba(18,10,6,0.90) 80%, var(--color-bg-dark) 100%),
+        url("assets/hero-etapa2.jpg") center 12% / cover no-repeat,
         var(--color-bg-dark);
       overflow: hidden;
     }
@@ -284,17 +310,17 @@
 
     .hero-title {
       font-family: var(--font-display);
-      font-size: clamp(60px, 14vw, 108px);
+      font-size: clamp(76px, 20vw, 150px);
       line-height: 0.9; color: var(--color-fg);
       margin-bottom: 24px;
     }
     .hero-title .accent { color: var(--color-accent); }
-    .hero-title .primary { color: var(--color-primary); }
+    .hero-title .primary { color: var(--color-red-bright); }
 
     .hero-subtitle {
       font-size: clamp(0.95rem, 2vw, 1.1rem);
       color: var(--color-fg-muted); margin-bottom: 28px;
-      line-height: 1.7; max-width: 480px;
+      line-height: 1.7; max-width: 540px;
     }
     .hero-subtitle strong { color: var(--color-fg); }
 
@@ -303,8 +329,8 @@
       justify-content: center; align-items: center;
       gap: 6px 14px; margin-bottom: 16px;
       padding: 10px 22px; border-radius: 100px;
-      background: rgba(210,174,109,0.07);
-      border: 1px solid rgba(210,174,109,0.28);
+      background: rgba(244, 223, 180,0.07);
+      border: 1px solid rgba(244, 223, 180,0.28);
     }
     .hero-date-item { font-size: 0.875rem; font-weight: 700; color: var(--color-accent); }
     .hero-date-sep { color: var(--color-border); }
@@ -312,8 +338,8 @@
 
     .hero-prize {
       width: 100%;
-      background: linear-gradient(135deg, rgba(210,174,109,0.11) 0%, rgba(153,68,52,0.07) 100%);
-      border: 1px solid rgba(210,174,109,0.4);
+      background: linear-gradient(135deg, rgba(244, 223, 180,0.11) 0%, rgba(207, 59, 43,0.07) 100%);
+      border: 1px solid rgba(244, 223, 180,0.4);
       border-radius: var(--radius-lg);
       padding: 24px 32px; margin-bottom: 32px;
       display: flex; flex-direction: column; align-items: center; gap: 4px;
@@ -362,6 +388,9 @@
 
     /* ── Ajustes mobile ───────────────────────────────────────── */
     @media (max-width: 479px) {
+      /* Eyebrow do hero numa linha só */
+      .hero-eyebrow { font-size: 0.66rem; letter-spacing: 0.08em; gap: 6px; }
+
       /* Botões CTA largura total */
       .hero-ctas { gap: 10px; }
       .hero-ctas .btn { width: 100%; }
@@ -391,7 +420,7 @@
     .section-header .label {
       display: block; font-size: 0.72rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: 0.14em;
-      color: var(--color-primary); margin-bottom: 12px;
+      color: var(--color-red-bright); margin-bottom: 12px;
     }
     .section-header h2 {
       font-family: var(--font-display);
@@ -413,7 +442,7 @@
 
     .about .section-label-top {
       font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 0.14em; color: var(--color-primary); margin-bottom: 12px;
+      letter-spacing: 0.14em; color: var(--color-red-bright); margin-bottom: 12px;
     }
     .about h2 {
       font-family: var(--font-display);
@@ -426,7 +455,7 @@
     .about-callout {
       margin-top: 24px; padding: 16px 24px;
       border-left: 3px solid var(--color-primary);
-      background: rgba(153,68,52,0.07);
+      background: rgba(207, 59, 43,0.07);
       border-radius: 0 var(--radius) var(--radius) 0;
       font-style: italic; color: var(--color-fg); font-size: 1.02rem;
       line-height: 1.5;
@@ -434,7 +463,7 @@
 
     .about-img {
       aspect-ratio: 4/3; background: var(--color-bg-subtle);
-      border-radius: var(--radius-lg); border: 1px solid rgba(210, 174, 109, 0.25);
+      border-radius: var(--radius-lg); border: 1px solid rgba(244, 223, 180, 0.25);
       overflow: hidden;
       box-shadow: 0 8px 40px rgba(0,0,0,0.45);
     }
@@ -459,7 +488,7 @@
       border-radius: var(--radius-lg); padding: 32px 28px;
       transition: border-color 0.25s, box-shadow 0.25s;
     }
-    .card:hover { border-color: rgba(210,174,109,0.45); box-shadow: 0 8px 32px rgba(0,0,0,0.45); }
+    .card:hover { border-color: rgba(244, 223, 180,0.45); box-shadow: 0 8px 32px rgba(0,0,0,0.45); }
 
     .card-type {
       font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
@@ -534,7 +563,7 @@
       display: flex; flex-direction: column;
       transition: transform 0.2s, border-color 0.2s;
     }
-    .stage-card:hover { transform: translateY(-3px); border-color: rgba(210,174,109,0.35); }
+    .stage-card:hover { transform: translateY(-3px); border-color: rgba(244, 223, 180,0.35); }
 
     .stage-card-head {
       background: var(--color-primary); padding: 12px 24px;
@@ -562,9 +591,9 @@
       text-transform: uppercase; letter-spacing: 0.07em;
     }
     .stage-status-soon {
-      background: rgba(210,174,109,0.1);
+      background: rgba(244, 223, 180,0.1);
       color: var(--color-accent);
-      border: 1px solid rgba(210,174,109,0.2);
+      border: 1px solid rgba(244, 223, 180,0.2);
     }
     .stage-status-open {
       background: rgba(46,125,50,0.15);
@@ -604,7 +633,7 @@
     .step-n {
       flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
       border: 2px solid var(--color-primary);
-      color: var(--color-primary); display: flex; align-items: center; justify-content: center;
+      color: var(--color-red-bright); display: flex; align-items: center; justify-content: center;
       font-family: var(--font-display); font-size: 1rem;
     }
     .step-text { color: var(--color-fg-muted); font-size: 0.93rem; padding-top: 4px; line-height: 1.5; }
@@ -627,11 +656,11 @@
     }
     .price-pack-best {
       border-color: var(--color-accent);
-      background: rgba(210,174,109,0.06);
+      background: rgba(244, 223, 180,0.06);
     }
     .price-pack-tag {
       position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
-      background: var(--color-accent); color: #0D0807;
+      background: var(--color-accent); color: #120A06;
       font-size: 0.62rem; font-weight: 800; text-transform: uppercase;
       letter-spacing: 0.08em; padding: 2px 10px; border-radius: 100px;
       white-space: nowrap;
@@ -683,7 +712,7 @@
       flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
       border: 1px solid var(--color-border);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; color: var(--color-primary);
+      font-size: 1rem; color: var(--color-red-bright);
       transition: transform 0.25s;
     }
     .faq-item.is-open .faq-icon { transform: rotate(45deg); }
@@ -709,7 +738,7 @@
       align-items: flex-start;
     }
     .rules-box li:last-child { border-bottom: none; }
-    .rules-box li::before { content: "→"; color: var(--color-primary); flex-shrink: 0; font-weight: 700; }
+    .rules-box li::before { content: "→"; color: var(--color-red-bright); flex-shrink: 0; font-weight: 700; }
 
     /* ============================================================
        PRIZES
@@ -734,7 +763,7 @@
     td:first-child { color: var(--color-fg); font-weight: 600; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: rgba(255,255,255,0.015); }
-    .row-champion td { background: rgba(210,174,109,0.05); }
+    .row-champion td { background: rgba(244, 223, 180,0.05); }
     .row-champion td:first-child { color: var(--color-accent); }
     .tbd { color: var(--color-fg-muted); opacity: 0.45; font-style: italic; }
     .prizes-note {
@@ -757,7 +786,7 @@
       border-radius: var(--radius-lg); border: 1px solid var(--color-border);
       transition: border-color 0.2s;
     }
-    .diff-item:hover { border-color: rgba(153,68,52,0.45); }
+    .diff-item:hover { border-color: rgba(207, 59, 43,0.45); }
     .diff-icon { font-size: 1.8rem; margin-bottom: 16px; }
     .diff-item h3 { font-weight: 700; color: var(--color-fg); margin-bottom: 10px; font-size: 0.93rem; }
     .diff-item p { color: var(--color-fg-muted); font-size: 0.88rem; line-height: 1.65; }
@@ -812,7 +841,7 @@
     .contact-btns { display: flex; flex-wrap: wrap; gap: 10px; }
     .contact-icon {
       width: 40px; height: 40px; border-radius: var(--radius);
-      background: rgba(153,68,52,0.1); border: 1px solid rgba(153,68,52,0.2);
+      background: rgba(207, 59, 43,0.1); border: 1px solid rgba(207, 59, 43,0.2);
       display: flex; align-items: center; justify-content: center;
       font-size: 1.1rem; flex-shrink: 0;
     }
@@ -886,7 +915,7 @@
       color: var(--color-fg); font-family: var(--font-primary); font-size: 0.95rem;
       width: 100%; transition: border-color 0.2s;
     }
-    .reg-input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(210,174,109,0.08); }
+    .reg-input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(244, 223, 180,0.08); }
     .reg-input::placeholder { color: var(--color-fg-muted); opacity: 0.45; }
     select.reg-input option { background: var(--color-bg-dark); }
 
@@ -894,7 +923,7 @@
     .reg-radios { display: flex; gap: 10px; }
     .reg-radio  { display: flex; align-items: center; justify-content: center; gap: 8px; flex: 1; cursor: pointer; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-size: 0.9rem; font-weight: 600; color: var(--color-fg-muted); background: var(--color-bg-dark); transition: all 0.2s; }
     .reg-radio input { display: none; }
-    .reg-radio.selected { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.1); }
+    .reg-radio.selected { border-color: var(--color-primary); color: var(--color-fg); background: rgba(207, 59, 43,0.1); }
     .reg-radio:hover { border-color: var(--color-fg-muted); }
 
     /* Buttons +/- para contadores */
@@ -920,7 +949,7 @@
       cursor: pointer; display: flex; align-items: center; justify-content: center;
       font-family: var(--font-primary); transition: all 0.15s;
     }
-    .conj-remove:hover { border-color: var(--color-primary); color: var(--color-fg); background: rgba(153,68,52,0.12); }
+    .conj-remove:hover { border-color: var(--color-primary); color: var(--color-fg); background: rgba(207, 59, 43,0.12); }
     .conj-counters { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
     .conj-cnt-row {
       display: flex; flex-direction: column;
@@ -929,7 +958,7 @@
       border: 1px solid var(--color-border); transition: border-color 0.15s;
       overflow: hidden;
     }
-    .conj-cnt-row.active { border-color: rgba(153,68,52,0.4); }
+    .conj-cnt-row.active { border-color: rgba(207, 59, 43,0.4); }
     .conj-cnt-label { display: flex; align-items: center; gap: 8px; font-size: 0.72rem; color: var(--color-fg-muted); }
     .conj-cnt-ctrl  { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; min-width: 0; }
     .conj-cnt-ctrl .reg-cbtn { width: 100%; height: 52px; font-size: 1.4rem; min-width: 0; }
@@ -946,7 +975,7 @@
 
     /* Price display */
     .reg-price {
-      background: var(--color-bg-dark); border: 1px solid rgba(210,174,109,0.25);
+      background: var(--color-bg-dark); border: 1px solid rgba(244, 223, 180,0.25);
       border-radius: var(--radius-lg); padding: 20px 24px;
       display: flex; align-items: center; flex-wrap: wrap; gap: 16px 40px;
     }
@@ -961,7 +990,7 @@
     .reg-unlock {
       width: 100%; display: flex; align-items: center; gap: 10px;
       padding: 12px 16px; margin-top: 12px;
-      background: rgba(210,174,109,0.08); border: 1px solid rgba(210,174,109,0.3);
+      background: rgba(244, 223, 180,0.08); border: 1px solid rgba(244, 223, 180,0.3);
       border-radius: var(--radius); font-size: 0.85rem;
       color: var(--color-accent); font-weight: 700;
     }
@@ -973,7 +1002,7 @@
     .reg-sum-head-name  { font-family: var(--font-display); font-size: 1.3rem; color: #fff; }
     .reg-sum-head-etapa { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.65); }
     .reg-sum-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; }
-    .reg-sum-block h4 { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-primary); margin-bottom: 10px; }
+    .reg-sum-block h4 { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-red-bright); margin-bottom: 10px; }
     .reg-sum-row { display: flex; gap: 8px; font-size: 0.88rem; padding: 7px 0; border-bottom: 1px solid var(--color-border); }
     .reg-sum-row:last-child { border-bottom: none; }
     .reg-sum-k { color: var(--color-fg-muted); flex: 0 0 110px; }
@@ -981,7 +1010,7 @@
     .reg-sum-cat-n { color: var(--color-fg-muted); }
     .reg-sum-cat-q { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-accent); }
     .reg-sum-cat.zero .reg-sum-cat-q { color: var(--color-border); }
-    .reg-sum-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: rgba(210,174,109,0.05); border: 1px solid rgba(210,174,109,0.18); border-radius: var(--radius); }
+    .reg-sum-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: rgba(244, 223, 180,0.05); border: 1px solid rgba(244, 223, 180,0.18); border-radius: var(--radius); }
     .reg-sum-total-lbl { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-fg-muted); margin-bottom: 4px; }
     .reg-sum-total-cnt { font-family: var(--font-display); font-size: 1.4rem; color: var(--color-fg); }
     .reg-sum-total-sub { font-size: 0.75rem; color: var(--color-fg-muted); margin-top: 4px; }
@@ -989,7 +1018,7 @@
 
     /* Nav + errors */
     .reg-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--color-border); }
-    .reg-errors { background: rgba(153,68,52,0.1); border: 1px solid rgba(153,68,52,0.3); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
+    .reg-errors { background: rgba(207, 59, 43,0.1); border: 1px solid rgba(207, 59, 43,0.3); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
     .reg-errors p { font-size: 0.86rem; color: #EF9A9A; margin-bottom: 4px; }
     .reg-errors p:last-child { margin-bottom: 0; }
     .reg-errors p::before { content: "⚠ "; }
@@ -1020,7 +1049,77 @@
     @media (prefers-reduced-motion: reduce) {
       .mod-animate { opacity: 1; }
     }
+    /* ============================================================
+       ETAPA II — FAIXA DO CIRCUITO
+    ============================================================ */
+    .circuit { background: var(--color-bg-dark); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 0; }
+    .circuit-inner { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .circuit-step {
+      position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px;
+      padding: 20px 8px; text-align: center; color: var(--color-fg-muted);
+    }
+    .circuit-step + .circuit-step { border-left: 1px solid var(--color-border); }
+    .circuit-n { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(1.25rem, 4vw, 1.75rem); line-height: 1; color: var(--color-fg); }
+    .circuit-city { font-size: 0.78rem; font-weight: 600; }
+    .circuit-status { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .circuit-step.done .circuit-n { color: var(--color-fg-muted); }
+    .circuit-step.done .circuit-status { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+    .circuit-step.done:hover .circuit-status { color: var(--color-fg); }
+    .circuit-step.done:not([href]) .circuit-status { text-decoration: none; }
+    .circuit-step.now { background: linear-gradient(180deg, rgba(207, 59, 43,0.16), rgba(207, 59, 43,0.04)); box-shadow: inset 0 3px 0 var(--color-red-bright); }
+    .circuit-step.now .circuit-n { color: var(--color-red-bright); }
+    .circuit-step.now .circuit-city { color: var(--color-fg); }
+    .circuit-step.now .circuit-status { color: var(--color-accent); }
+    .circuit-step.next { opacity: 0.7; }
+    @media (max-width: 479px) {
+      .circuit-city { font-size: 0.68rem; }
+      .circuit-status { font-size: 0.58rem; letter-spacing: 0.02em; }
+    }
+
+    /* ============================================================
+       ETAPA II — REVEJA A ETAPA I (lives)
+    ============================================================ */
+    .replay { background: var(--color-bg-mid); border-top: 1px solid var(--color-border); }
+    .replay-grid { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 960px; margin: 0 auto; }
+    @media (min-width: 768px) { .replay-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
+    .replay-card {
+      display: block; overflow: hidden; border-radius: var(--radius-lg);
+      background: var(--color-bg-subtle); border: 1px solid var(--color-border);
+      transition: border-color 0.25s, transform 0.2s;
+    }
+    a.replay-card:hover { border-color: var(--color-red-bright); transform: translateY(-2px); }
+    .replay-thumb { position: relative; aspect-ratio: 16 / 9; background: var(--color-bg-dark); }
+    .replay-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .replay-play {
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+      width: 64px; height: 64px; border-radius: 50%; background: var(--color-primary);
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    }
+    .replay-play::after { content: ""; margin-left: 5px; border-style: solid; border-width: 11px 0 11px 18px; border-color: transparent transparent transparent #FFFFFF; }
+    .replay-tag {
+      position: absolute; left: 12px; top: 12px; padding: 4px 10px; border-radius: 4px;
+      background: rgba(18,10,6,0.8); font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-fg);
+    }
+    .replay-body { padding: 18px 20px 20px; }
+    .replay-body h3 { font-family: var(--font-display); text-transform: uppercase; font-size: 1.6rem; line-height: 1; color: var(--color-fg); margin-bottom: 6px; }
+    .replay-body p { font-size: 0.88rem; color: var(--color-fg-muted); }
+    .replay-card.pending .replay-play { background: var(--color-border); }
+    .replay-moments { max-width: 960px; margin: 32px auto 0; }
+    .replay-moments h3 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-fg-muted); margin-bottom: 14px; text-align: center; }
+    .replay-moments ul { list-style: none; display: grid; grid-template-columns: 1fr; gap: 10px; }
+    @media (min-width: 768px) { .replay-moments ul { grid-template-columns: 1fr 1fr; } }
+    .replay-moment {
+      display: flex; align-items: center; gap: 14px; padding: 12px 16px; min-height: 48px;
+      border: 1px solid var(--color-border); border-radius: var(--radius); color: var(--color-fg); font-size: 0.88rem; font-weight: 600;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    a.replay-moment:hover { border-color: var(--color-red-bright); background: rgba(207, 59, 43,0.08); }
+    .replay-moment time { flex-shrink: 0; font-family: var(--font-display); font-size: 1.15rem; color: var(--color-red-bright); min-width: 64px; }
+    .replay-moment.pending { opacity: 0.55; }
+    .replay-note { text-align: center; font-size: 0.78rem; color: var(--color-fg-muted); margin-top: 18px; }
+
   </style>
+  <script src="assets/precos.js"></script>
 </head>
 <body>
 
@@ -1055,7 +1154,7 @@
     <a href="#prizes" onclick="closeDrawer()">Premiação</a>
     <a href="#sponsorship" onclick="closeDrawer()">Patrocínio</a>
     <a href="#contact" onclick="closeDrawer()">Regulamento &amp; Contato</a>
-    <a href="inscricoes.html" class="btn btn-primary" onclick="closeDrawer()">Inscrever na Etapa 1</a>
+    <a href="inscricoes.html" class="btn btn-primary" onclick="closeDrawer()">Inscrever na Etapa II</a>
   </nav>
 
   <!-- ══════════════════════════════════════════════════════
@@ -1068,12 +1167,10 @@
 
       <!-- COLUNA TEXTO -->
       <div class="hero-content">
-        <div class="hero-eyebrow">Etapa 1 — Temporada 2026</div>
+        <div class="hero-eyebrow">Circuito Pro Had — Temporada 2026</div>
 
         <h1 class="hero-title">
-          Circuito<br>
-          Pro <span class="accent">Had</span><br>
-          <span class="primary">2026</span>
+          Etapa <span class="primary">II</span>
         </h1>
 
         <p class="hero-subtitle">
@@ -1083,15 +1180,15 @@
         </p>
 
         <div class="hero-date-badge">
-          <span class="hero-date-item">27 e 28 de Junho de 2026</span>
+          <span class="hero-date-item">16 e 17 de Janeiro de 2027</span>
           <span class="hero-date-sep">|</span>
-          <span class="hero-date-item">Uberlândia — MG</span>
+          <span class="hero-date-item">Engenheiro Coelho — SP</span>
         </div>
 
         <div class="hero-prize">
           <span class="hero-prize-label">Premiação Total</span>
-          <div class="hero-prize-value">R$ 40.000</div>
-          <span class="hero-prize-sub">em premiação distribuída</span>
+          <div class="hero-prize-value">+ R$ 40 mil</div>
+          <span class="hero-prize-sub">em prêmios na Etapa II</span>
         </div>
 
         <div class="hero-ctas">
@@ -1111,7 +1208,7 @@
           </div>
           <div class="hero-sp-divider"></div>
           <div class="hero-sp-item">
-            <span class="hero-sp-number">R$40k</span>
+            <span class="hero-sp-number">+R$40k</span>
             <span class="hero-sp-label">Em jogo</span>
           </div>
         </div>
@@ -1120,6 +1217,30 @@
 
     </div>
   </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       ETAPA II — FAIXA DO CIRCUITO
+  ══════════════════════════════════════════════════════ -->
+  <nav class="circuit" aria-label="Etapas do Circuito Pro Had">
+    <div class="container circuit-inner">
+      <a class="circuit-step done" href="#etapa1">
+        <span class="circuit-n">Etapa I</span>
+        <span class="circuit-city">Uberlândia-MG</span>
+        <span class="circuit-status">✓ Realizada · ver live</span>
+      </a>
+      <a class="circuit-step now" href="inscricoes.html" aria-current="step">
+        <span class="circuit-n">Etapa II</span>
+        <span class="circuit-city">Engenheiro Coelho-SP</span>
+        <span class="circuit-status">Inscrições abertas</span>
+      </a>
+      <div class="circuit-step next">
+        <span class="circuit-n">Etapa III</span>
+        <span class="circuit-city">Local a definir</span>
+        <span class="circuit-status">Em breve</span>
+      </div>
+    </div>
+  </nav>
 
   <!-- ══════════════════════════════════════════════════════
        SEÇÃO 2 — O QUE É O PRO HAD
@@ -1134,7 +1255,7 @@
           <div class="about-body">
             <p>O Pro Had é um circuito com <strong>3 etapas por temporada</strong>, criado para elevar o pastoreio com cães a um nível de competição organizado, justo e com presença nacional.</p>
             <p>Cada prova acontece em pista delimitada com <strong>3 cabeças de bovinos</strong>. O conjunto — cão e competidor — conduz o rebanho com a maior pontuação no menor tempo.</p>
-            <p><strong>Amador compete com Amador. Profissional compete com Profissional.</strong> As categorias nunca se cruzam dentro da pista.</p>
+            <p><strong>Profissional compete só no Profissional.</strong> O Amador disputa a sua categoria e, se quiser, também pode se inscrever no Profissional.</p>
           </div>
           <blockquote class="about-callout">
             "Regulamento público. Critérios claros. Resultado que você pode questionar se tiver razão."
@@ -1144,7 +1265,7 @@
           </div>
         </div>
         <div class="about-img">
-          <img src="assets/foto-site-01.png" alt="Prova Pro Had — cão e competidor conduzindo o rebanho">
+          <img src="assets/etapa1-banner-prohad.jpg" alt="Competidor a cavalo com seu Border Collie na pista da Etapa I, em Uberlândia-MG, com o banner PRO HAD ao fundo" width="960" height="720" loading="lazy">
         </div>
       </div>
     </div>
@@ -1250,9 +1371,9 @@
   <section class="inscriptions" id="inscricoes">
     <div class="container">
       <div class="section-header">
-        <span class="label">Inscrições — Etapa 1</span>
+        <span class="label">Inscrições — Etapa II</span>
         <h2>Inscreva seu conjunto.</h2>
-        <p>27 e 28 de Junho · Uberlândia — MG · R$ 40.000 em premiação</p>
+        <p>16 e 17 de Janeiro · Engenheiro Coelho — SP · Mais de R$ 40 mil em premiação</p>
       </div>
 
       <div class="reg-form" id="regForm">
@@ -1365,7 +1486,7 @@
             </div>
             <div class="reg-price-break" id="priceBreak"></div>
             <div class="reg-unlock" id="priceUnlock" style="display:none;">
-              Você desbloqueou a tarifa especial de R$ 300 por inscrição adicional!
+              Você desbloqueou a tarifa especial de <span data-preco="cadaExtra">R$ 300</span> por inscrição adicional!
             </div>
           </div>
           <div class="reg-errors" id="err-3" style="display:none;"></div>
@@ -1416,13 +1537,63 @@
   <section class="prizes" id="prizes">
     <div class="container">
       <div class="section-header">
-        <span class="label">Premiação — Etapa 1</span>
-        <h2>R$ 40.000 em premiação.</h2>
-        <p>R$ 10.000 por categoria — Amador Foot · Amador Horse · Pro Foot · Pro Horse</p>
+        <span class="label">Premiação — Etapa II</span>
+        <h2>Mais de R$ 40 mil em premiação.</h2>
+        <p>Distribuídos entre as 4 categorias — Amador Foot · Amador Horse · Pro Foot · Pro Horse</p>
       </div>
     </div>
   </section>
 
+
+  <!-- ══════════════════════════════════════════════════════
+       ETAPA II — REVEJA A ETAPA I
+       Para ativar: preencha os IDs do YouTube em PROHAD_LIVES (script no fim da página).
+  ══════════════════════════════════════════════════════ -->
+  <section class="replay" id="etapa1">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Etapa I · Uberlândia-MG</span>
+        <h2>Reveja a Etapa I.</h2>
+        <p>A abertura do circuito foi transmitida ao vivo. Assista às provas e à entrega dos prêmios no palco.</p>
+      </div>
+
+      <div class="replay-grid">
+        <a class="replay-card" data-live="dia1" target="_blank" rel="noopener">
+          <div class="replay-thumb">
+            <img src="assets/live-dia1.jpg" alt="Cavaleiro e cão conduzindo o gado na pista da Etapa I" loading="lazy" width="640" height="360">
+            <span class="replay-tag">Ao vivo · Dia 1</span>
+            <span class="replay-play" aria-hidden="true"></span>
+          </div>
+          <div class="replay-body">
+            <h3>Dia 1</h3>
+            <p>Transmissão completa do primeiro dia de provas.</p>
+          </div>
+        </a>
+        <a class="replay-card" data-live="dia2" target="_blank" rel="noopener">
+          <div class="replay-thumb">
+            <img src="assets/live-premios.jpg" alt="Premiados da Etapa I no palco com os cheques" loading="lazy" width="640" height="360">
+            <span class="replay-tag">Ao vivo · Dia 2</span>
+            <span class="replay-play" aria-hidden="true"></span>
+          </div>
+          <div class="replay-body">
+            <h3>Dia 2</h3>
+            <p>Horseback Amador e Profissional e a entrega dos prêmios.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="replay-moments">
+        <h3>Melhores momentos do Dia 2</h3>
+        <ul>
+          <li><a class="replay-moment" data-live="dia2" data-t="158" target="_blank" rel="noopener"><time>0:02:38</time>Abertura com os competidores na pista</a></li>
+          <li><a class="replay-moment" data-live="dia2" data-t="6205" target="_blank" rel="noopener"><time>1:43:25</time>Cão de trabalho conduzindo o gado</a></li>
+          <li><a class="replay-moment" data-live="dia2" data-t="26640" target="_blank" rel="noopener"><time>7:24:00</time>Cavalo e cão lado a lado</a></li>
+          <li><a class="replay-moment" data-live="dia2" data-t="33448" target="_blank" rel="noopener"><time>9:17:28</time>Entrega dos prêmios no palco</a></li>
+        </ul>
+        <p class="replay-note" id="replayNote" hidden>Os vídeos completos estarão disponíveis em breve.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ══════════════════════════════════════════════════════
        SEÇÃO 9 — PATROCÍNIO
@@ -1587,7 +1758,7 @@
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
       header.style.borderBottomColor = window.scrollY > 80
-        ? 'rgba(153,68,52,0.4)' : 'var(--color-border)';
+        ? 'rgba(207, 59, 43,0.4)' : 'var(--color-border)';
     }, { passive: true });
 
     // FAQ accordion
@@ -1768,21 +1939,8 @@
     }
     function esc(s) { return s.replace(/"/g, '&quot;'); }
 
-    function calcTotalPrice(n) {
-      if (n <= 0) return 0;
-      if (n === 1) return 400;
-      if (n === 2) return 750;
-      if (n <= 6)  return n * 333;
-      return 1998 + (n - 6) * 300;
-    }
-    function calcBreakdown(n) {
-      if (n <= 0) return '';
-      if (n === 1) return '1 inscrição: R$ 400';
-      if (n === 2) return '2 inscrições: R$ 750';
-      if (n <= 6)  return `${n} inscrições × R$ 333 = ${fmtP(n * 333)}`;
-      const ex = n - 6;
-      return `6 inscrições = R$ 1.998 + ${ex} inscrição${ex>1?'ões':''} extra${ex>1?'s':''} × R$ 300 = ${fmtP(calcTotalPrice(n))}`;
-    }
+    function calcTotalPrice(n) { return PROHAD_PRECO.total(n); }
+    function calcBreakdown(n)  { return PROHAD_PRECO.calculo(n); }
     function fmtP(p)      { return 'R$ ' + p.toLocaleString('pt-BR'); }
     function totalCount() { return RS.conjuntos.reduce((a,c) => a + c.counts.amadorFoot + c.counts.amadorHorse + c.counts.proFoot + c.counts.proHorse, 0); }
     function calcTotalVal(){ return RS.conjuntos.reduce((a,c) => a, 0) || calcTotalPrice(totalCount()); }
@@ -1797,7 +1955,7 @@
       document.getElementById('priceVal').textContent   = fmtP(total);
       document.getElementById('priceBreak').textContent = calcBreakdown(n);
       const unlock = document.getElementById('priceUnlock');
-      if (unlock) unlock.style.display = n >= 7 ? 'flex' : 'none';
+      if (unlock) { const L = PROHAD_PRECO.loteAtual(); unlock.style.display = n >= 7 && L.cadaExtra < L.cadaAteSeis ? 'flex' : 'none'; }
     }
 
     function buildSummary() {
@@ -1818,7 +1976,7 @@
       document.getElementById('regSummary').innerHTML = `
         <div class="reg-sum-head">
           <span class="reg-sum-head-name">★ ${name}</span>
-          <span class="reg-sum-head-etapa">Etapa 1 · Uberlândia-MG · Jun/2026</span>
+          <span class="reg-sum-head-etapa">Etapa II · Engenheiro Coelho-SP · Jan/2027</span>
         </div>
         <div class="reg-sum-body">
           <div class="reg-sum-block">
@@ -1862,14 +2020,14 @@
       const payload = {
         nome: v('fName'), camisa: document.getElementById('fShirt').value,
         whatsapp: v('fWp'), cidade: v('fCity'), estado: document.getElementById('fState').value,
-        tipoCompetidor: RS.tipoCompetidor, etapa: 'Etapa 1',
+        tipoCompetidor: RS.tipoCompetidor, etapa: 'Etapa II',
         conjuntos: RS.conjuntos.map(c => ({
           nomeCao: c.nomeCao, sexo: c.sexo,
           amadorFoot: c.counts.amadorFoot, amadorHorse: c.counts.amadorHorse,
           proFoot: c.counts.proFoot, proHorse: c.counts.proHorse,
           totalConjunto: Object.values(c.counts).reduce((a,b)=>a+b,0)
         })),
-        totalInscricoes: n, valorTotal: total
+        totalInscricoes: n, valorTotal: total, lote: PROHAD_PRECO.loteAtual().nome
       };
 
       const btn = document.getElementById('finBtn');
@@ -1887,6 +2045,8 @@
         if (!result.success) throw new Error(result.error || 'Erro ao registrar inscrição.');
 
         const inscricaoId = result.data.id;
+        const totalFinal  = result.data.valorTotal != null ? result.data.valorTotal : total;
+        const calcFinal   = result.data.calculo || '';
         document.getElementById('panel4Content').style.display = 'none';
         document.getElementById('successState').style.display  = 'block';
         document.getElementById('successId').textContent       = inscricaoId;
@@ -1912,15 +2072,15 @@ Minha inscrição foi registrada.
 
 Competidor: ${payload.nome}
 Categoria: ${RS.tipoCompetidor.charAt(0).toUpperCase()+RS.tipoCompetidor.slice(1)}
-Etapa 1 · Uberlândia-MG
+Etapa II · Engenheiro Coelho-SP · 16 e 17/01
 
 *CONJUNTOS*
 ${conjMsg}
 
 *CÁLCULO*
-${calcBreakdown(n)}
+${calcFinal || calcBreakdown(n)}
 
-*TOTAL: ${n} inscrição(ões) · ${fmtP(total)}*
+*TOTAL: ${n} inscrição(ões) · ${fmtP(totalFinal)}*
 
 Aguardando instruções para pagamento. 🤝`;
           window.open('https://wa.me/5533999442876?text=' + encodeURIComponent(msg), '_blank');
@@ -1953,6 +2113,27 @@ Aguardando instruções para pagamento. 🤝`;
         });
       }, { threshold: 0.12 });
       targets.forEach(function(el) { io.observe(el); });
+    })();
+  </script>
+
+  <script>
+    /* Lives da Etapa I no YouTube: cole só o ID do vídeo (o trecho depois de "v=" ou de "youtu.be/"). */
+    const PROHAD_LIVES = { dia1: '', dia2: '' };
+    (function () {
+      let missing = false;
+      document.querySelectorAll('[data-live]').forEach(function (el) {
+        const id = PROHAD_LIVES[el.dataset.live];
+        if (!id) { missing = true; el.classList.add('pending'); el.removeAttribute('href'); el.setAttribute('aria-disabled', 'true'); return; }
+        const t = el.dataset.t ? '&t=' + el.dataset.t + 's' : '';
+        el.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(id) + t;
+      });
+      if (missing) document.getElementById('replayNote').hidden = false;
+      // Sem nenhum link ainda: esconde o bloco e tira o "ver live" da faixa do circuito
+      if (!PROHAD_LIVES.dia1 && !PROHAD_LIVES.dia2) {
+        document.getElementById('etapa1').hidden = true;
+        const st = document.querySelector('.circuit-step.done');
+        if (st) { st.removeAttribute('href'); st.querySelector('.circuit-status').textContent = '✓ Realizada'; }
+      }
     })();
   </script>
 </body>
