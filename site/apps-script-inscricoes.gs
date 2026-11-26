@@ -30,7 +30,8 @@
  * ══════════════════════════════════════════════════════════
  */
 
-const ABA_INSCRICOES = 'Inscrições';
+// Etapa II grava numa aba própria (a aba 'Inscrições' guarda a Etapa I).
+const ABA_INSCRICOES = 'Inscrições Etapa II';
 
 const CAT_LABELS = {
   amadorFoot:  'AMADOR ONE FOOT',
