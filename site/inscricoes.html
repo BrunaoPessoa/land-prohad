@@ -723,7 +723,7 @@
               </div>
               <div class="reg-price-break" id="priceBreak"></div>
               <div class="reg-unlock" id="priceUnlock" style="display:none;">
-                Você desbloqueou a tarifa especial de <span data-preco="cadaExtra">R$ 300</span> por inscrição adicional!
+                A partir da 7ª, todas as suas inscrições saem por <span data-preco="cadaDaSetima">R$ 300</span> cada!
               </div>
             </div>
 
@@ -1058,7 +1058,7 @@
       document.getElementById('priceVal').textContent   = fmtP(total);
       document.getElementById('priceBreak').textContent = calcBreakdown(n);
       const unlock = document.getElementById('priceUnlock');
-      if (unlock) { const L = PROHAD_PRECO.loteAtual(); unlock.style.display = n >= 7 && L.cadaExtra < L.cadaAteSeis ? 'flex' : 'none'; }
+      if (unlock) { const L = PROHAD_PRECO.loteAtual(); unlock.style.display = n >= 7 && L.cadaDaSetima < L.cadaAteSeis ? 'flex' : 'none'; }
     }
 
     /* ── Resumo ──────────────────────────────────────────────── */
@@ -1219,10 +1219,10 @@ ${calcFinal || calcBreakdown(nFinal)}
 
 Aguardando instruções para pagamento. 🤝`;
 
-          window.open('https://wa.me/5533999442876?text=' + encodeURIComponent(msg), '_blank');
+          window.open('https://wa.me/5534992287065?text=' + encodeURIComponent(msg), '_blank');
           document.getElementById('successStatusText').textContent = 'WhatsApp aberto! Se não abriu, ';
           const link = document.createElement('a');
-          link.href = 'https://wa.me/5533999442876?text=' + encodeURIComponent(msg);
+          link.href = 'https://wa.me/5534992287065?text=' + encodeURIComponent(msg);
           link.target = '_blank'; link.textContent = 'clique aqui.';
           link.style.cssText = 'color:var(--color-accent);text-decoration:underline;';
           document.getElementById('successStatusText').appendChild(link);
